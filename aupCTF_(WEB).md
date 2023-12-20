@@ -1,4 +1,5 @@
 # aupCTF writeups for WEB 
+ctftime link: https://ctftime.org/event/2025/
 ## Starter - 100pts
 
 ![image](https://github.com/zer00d4y/writeups/assets/128820441/698c00f7-7c4e-4f4a-a183-ae622a3a6003)
