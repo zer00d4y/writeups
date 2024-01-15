@@ -1,5 +1,7 @@
 # UofTCTF 2024 Write-up
 
+University of Toronto CTF 2024
+
 ![image](https://ctftime.org/media/cache/f6/f5/f6f5774c9a69febce07a4b68601758a6.png)
 
 ## IoT
