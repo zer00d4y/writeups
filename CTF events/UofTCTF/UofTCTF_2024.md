@@ -214,7 +214,7 @@ By examining the contents of the :has pseudo-class, you can understand under wha
 
 ![image](https://github.com/zer00d4y/writeups/assets/128820441/09d5b610-a5cd-4f69-8a6c-c5776d47763d)
 
-Having made all the roundels green, all we have to do is turn all the bytes into ask characters.
+Having made all the roundels green, all we have to do is turn all the bytes into ASCII symbols.
 
 FLAG:
 
