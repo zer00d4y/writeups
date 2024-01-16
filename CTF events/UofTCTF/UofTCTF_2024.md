@@ -154,7 +154,7 @@ So, flag is:
 
     UofTCTF{BOD_Iberia_A340-300}
 
-# Introduction
+## Introduction
 
 ### Intro - General Information
 
@@ -163,5 +163,59 @@ Read and understand!
 FLAG:
 
     UofTCTF{600d_1uck}
+
+## Forensics
+
+### Secret Message 1
+
+We swiped a top-secret file from the vaults of a very secret organization, but all the juicy details are craftily concealed. Can you help me uncover them?
+
+Given a pdf file where the flag is colored black. You can solve this task in 3 different ways.
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/209766c8-abbd-4289-b18d-20dad9d7dcdd)
+
+1) Open the PDF file with any editor and remove the shaded area
+
+   ![image](https://github.com/zer00d4y/writeups/assets/128820441/8dc0d8b8-61fa-4752-9e08-5c4fbe18e385)
+   ![image](https://github.com/zer00d4y/writeups/assets/128820441/5c2d9cd5-c2b3-40df-99d6-f3dbb72e0bd7)
+
+2) Open the file with one of the browsers and copy the place where the flag is written
+
+   ![image](https://github.com/zer00d4y/writeups/assets/128820441/5485f49e-8185-458f-8cf9-d8fe3ec7f314)
+
+3) Open through a browser and enable the read aloud function.
+
+FLAG: 
+
+        uoftctf{fired_for_leaking_secrets_in_a_pdf}
+
+## Reverse Engineering
+
+### CSS Password
+
+Given the site. We need to find a combination of bits in bytes that will make all the pink rounds turn green.
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/c77c1c3a-0db7-4bb5-9625-572c98409bf1)
+
+You can see some interesting comments in the source code.
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/3b1cc89e-fd96-42ec-bacd-b6a48823db49)
+
+`/* LED1 */
+/* b1_7_l1_c1 */`
+
+From the first comment you can understand that the following lines are related to roundels.
+
+Upon further examination, you will see that under some comments `/* b1_7_l1_c1 */` there are almost identical css lines. Having studied them, you can understand that one of the two wrappers changes something. b1 in a comment can mean byte1, l1 catcher, c1 checker. And the remaining number can mean a bit.
+
+By examining the contents of the :has pseudo-class, you can understand under what conditions the change occurs.
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/09d5b610-a5cd-4f69-8a6c-c5776d47763d)
+
+Having made all the roundels green, all we have to do is turn all the bytes into ask characters.
+
+FLAG:
+
+        uoftctf{CsS_l0g1c_is_fun_3h}
 
                                  
