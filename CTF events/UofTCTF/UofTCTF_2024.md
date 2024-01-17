@@ -220,4 +220,27 @@ FLAG:
 
         uoftctf{CsS_l0g1c_is_fun_3h}
 
+## Cryptography
+
+### Wheel Barrow
+
+We have been given this text `hc0rhh3r3ylmsrwr___lsewt_03raf_rpetouin$_3tb0_t`
+
+look at the name of the task and look for cipher related to wheel barrow.
+
+We found this cipher [Burrows–Wheeler Transform](https://www.dcode.fr/burrows-wheeler-transform)
+
+Just use this online Burrows–Wheeler Transform decoder.
+
+The decoder gave several possible options.
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/94110e04-ebc3-434d-8dbf-04e3f0fcecd7)
+
+Take the given `burr0w_wh33ler_transform_is_pr3tty_c00l_eh$th3_` option and change `th3_` to the beginning of the sentence and wrap the flag in uoftctf{}
+
+FLAG:
+
+        uoftctf{th3_burr0w_wh33ler_transform_is_pr3tty_c00l_eh$}
+
+
                                  
