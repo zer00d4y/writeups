@@ -26,6 +26,8 @@ FLAG:
 
 ![image](https://github.com/zer00d4y/writeups/assets/128820441/2b7da697-db84-464c-b612-2faa21452dec)
 
+Check the source code and see the credentials for login page `username:password`
+
     <!DOCTYPE html>
     <html lang="en">
     <head>
@@ -93,6 +95,8 @@ FLAG:
     });
     
 ![image](https://github.com/zer00d4y/writeups/assets/128820441/df81345b-5cc5-4574-8b0b-b608cae1747c)
+
+Now, this is dashboard page, just use `cat flag.txt`
 
 ![image](https://github.com/zer00d4y/writeups/assets/128820441/10fa519e-f213-407d-aad5-3e020bc854cb)
 
