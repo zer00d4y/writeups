@@ -6,7 +6,41 @@ room link: https://tryhackme.com/room/umbrella
 
 ## Recon
 
-`nmap -sV -p- umbrella.thm`
+`nmap umbrella.thm`
+
+    PORT     STATE SERVICE
+    22/tcp   open  ssh
+    3306/tcp open  mysql
+    5000/tcp open  upnp
+    8080/tcp open  http-proxy
+
+`nmap -sT -sV -sC -p 22,3306,5000,8080 umbrella.thm`
+
+    PORT     STATE SERVICE VERSION
+    22/tcp   open  ssh     OpenSSH 8.2p1 Ubuntu 4ubuntu0.5 (Ubuntu Linux; protocol 2.0)
+    | ssh-hostkey: 
+    |   3072 f0:14:2f:d6:f6:76:8c:58:9a:8e:84:6a:b1:fb:b9:9f (RSA)
+    |   256 8a:52:f1:d6:ea:6d:18:b2:6f:26:ca:89:87:c9:49:6d (ECDSA)
+    |_  256 4b:0d:62:2a:79:5c:a0:7b:c4:f4:6c:76:3c:22:7f:f9 (ED25519)
+    3306/tcp open  mysql   MySQL 5.7.40
+    |_ssl-date: TLS randomness does not represent time
+    | ssl-cert: Subject: commonName=MySQL_Server_5.7.40_Auto_Generated_Server_Certificate
+    | Not valid before: 2022-12-22T10:04:49
+    |_Not valid after:  2032-12-19T10:04:49
+    | mysql-info: 
+    |   Protocol: 10
+    |   Version: 5.7.40
+    |   Thread ID: 6
+    |   Capabilities flags: 65535
+    |   Some Capabilities: SupportsCompression, LongPassword, Support41Auth, Speaks41ProtocolOld, IgnoreSigpipes, SwitchToSSLAfterHandshake, SupportsTransactions, SupportsLoadDataLocal, InteractiveClient, ConnectWithDatabase, ODBCClient, FoundRows, IgnoreSpaceBeforeParenthesis, Speaks41ProtocolNew, DontAllowDatabaseTableColumn, LongColumnFlag, SupportsMultipleStatments, SupportsMultipleResults, SupportsAuthPlugins
+    |   Status: Autocommit
+    |   Salt: SJ&\x11c\x1DM\x01{\x06\x11"   &+Y'v!\x14
+    |_  Auth Plugin Name: mysql_native_password
+    5000/tcp open  http    Docker Registry (API: 2.0)
+    |_http-title: Site doesn't have a title.
+    8080/tcp open  http    Node.js (Express middleware)
+    |_http-title: Login
+    Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 ## Docker 
 
