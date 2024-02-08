@@ -1,4 +1,4 @@
-# aupCTF writeups for WEB 
+# aupCTF 2023 writeups for WEB 
 ctftime link: https://ctftime.org/event/2025/
 ## Starter - 100pts
 
