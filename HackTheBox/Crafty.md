@@ -20,4 +20,11 @@
 
 ![image](https://github.com/zer00d4y/writeups/assets/128820441/bc60baa0-a1e2-40ef-b3c7-5fbd03a921e9)
 
+## log4j
+
+CVE-2021-44228
+
+Exploit link: https://github.com/kozmer/log4j-shell-poc
+
+`git clone https://github.com/kozmer/log4j-shell-poc`
 
