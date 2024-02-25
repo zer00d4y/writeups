@@ -1,5 +1,7 @@
 # CozyHosting Write-up
 
+<img src="https://labs.hackthebox.com/storage/avatars/eaed7cd01e84ef5c6ec7d949d1d61110.png" width="200" height="200">
+
 # Dirsearch
 
 `python3 dirsearch.py -u http://cozyhosting.htb`
