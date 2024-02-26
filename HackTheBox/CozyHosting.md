@@ -1,4 +1,4 @@
-# CozyHosting Write-up
+![image](https://github.com/zer00d4y/writeups/assets/128820441/4e580743-3868-4dca-b1ec-45b6692f7c02)# CozyHosting Write-up
 
 <img src="https://labs.hackthebox.com/storage/avatars/eaed7cd01e84ef5c6ec7d949d1d61110.png" width="200" height="200">
 
@@ -83,4 +83,9 @@
     200 -    0B  - /login.wdm%2e                                     
     204 -    0B  - /logout                                           
                                                                                  
-    Task Completed                                                                               
+    Task Completed    
+
+/actuator/sessions
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/c0473b62-97c5-4e15-811b-b35915afe6d0)
+
