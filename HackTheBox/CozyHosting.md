@@ -1,6 +1,26 @@
-![image](https://github.com/zer00d4y/writeups/assets/128820441/4e580743-3868-4dca-b1ec-45b6692f7c02)# CozyHosting Write-up
+# CozyHosting Write-up
 
 <img src="https://labs.hackthebox.com/storage/avatars/eaed7cd01e84ef5c6ec7d949d1d61110.png" width="200" height="200">
+
+-----------------------------------------------------------------------------------------------------------------------
+
+Main page `cozyhosting.htb`
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/a4d4d8d3-0a22-4a11-b907-14606c4f2c14)
+
+
+# Nmap 
+
+`nmap -sC -sV cozyhosting.htb` 
+
+    22/tcp open  ssh     OpenSSH 8.9p1 Ubuntu 3ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+    | ssh-hostkey: 
+    |   256 43:56:bc:a7:f2:ec:46:dd:c1:0f:83:30:4c:2c:aa:a8 (ECDSA)
+    |_  256 6f:7a:6c:3f:a6:8d:e2:75:95:d4:7b:71:ac:4f:7e:42 (ED25519)
+    80/tcp open  http    nginx 1.18.0 (Ubuntu)
+    |_http-title: Did not follow redirect to http://cozyhosting.htb
+    |_http-server-header: nginx/1.18.0 (Ubuntu)
+    Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 # Dirsearch
 
@@ -88,4 +108,14 @@
 /actuator/sessions
 
 ![image](https://github.com/zer00d4y/writeups/assets/128820441/c0473b62-97c5-4e15-811b-b35915afe6d0)
+
+login page
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/a635bf81-f568-43ef-9dc9-1e255cd231c1)
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/bdf6f862-c771-4181-8e95-240d76a9d9f6)
+
+
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/49cdc566-a6a5-47a5-b110-1bdd848dd63b)
 
