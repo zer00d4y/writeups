@@ -28,3 +28,13 @@ Exploit link: https://github.com/kozmer/log4j-shell-poc
 
 `git clone https://github.com/kozmer/log4j-shell-poc`
 
+![image](https://github.com/zer00d4y/writeups/assets/128820441/80440668-29ee-40e6-ae42-8abbdd022779)
+
+pyCraft: https://github.com/ammaraskar/pyCraft
+
+`git clone https://github.com/ammaraskar/pyCraft`
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/63123523-fa92-4b18-8afa-ba62338c33d9)
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/ac4e62ec-0683-441b-a931-0bfa086e50d9)
+
