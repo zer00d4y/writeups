@@ -21,3 +21,17 @@
     
     decrypted_message = decrypt(c, n, e)
     print(decrypted_message)
+
+### Makeshift
+
+    def decode_flag(encoded_flag):
+        decoded_flag = ''
+        for i in range(0, len(encoded_flag), 3):
+            decoded_flag += encoded_flag[i+2]
+            decoded_flag += encoded_flag[i]
+            decoded_flag += encoded_flag[i+1]
+        return decoded_flag[::-1]
+    
+    encoded_flag = "!?}De!e3d_5n_nipaOw_3eTR3bt4{_THB"
+    decoded_flag = decode_flag(encoded_flag)
+    print(decoded_flag)
