@@ -6,6 +6,8 @@
 
 ### Primary Knowledge
 
+![image](https://github.com/zer00d4y/writeups/assets/128820441/c7a2c26a-40e2-448d-a40c-e71cf8661756)
+
     import math
     from Crypto.Util.number import long_to_bytes
     
