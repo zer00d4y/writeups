@@ -24,6 +24,10 @@
     decrypted_message = decrypt(c, n, e)
     print(decrypted_message)
 
+FLAG:
+
+    HTB{0h_d4mn_4ny7h1ng_r41s3d_t0_0_1s_1!!!}
+
 ### Makeshift
 
     def decode_flag(encoded_flag):
