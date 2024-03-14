@@ -8,6 +8,8 @@
 
 ![image](https://github.com/zer00d4y/writeups/assets/128820441/c7a2c26a-40e2-448d-a40c-e71cf8661756)
 
+Decoder
+
     import math
     from Crypto.Util.number import long_to_bytes
     
@@ -30,6 +32,10 @@ FLAG:
 
 ### Makeshift
 
+![image](https://github.com/zer00d4y/writeups/assets/128820441/8775b769-6274-43c6-a9b5-6ec4cb68d384)
+
+Decoder
+
     def decode_flag(encoded_flag):
         decoded_flag = ''
         for i in range(0, len(encoded_flag), 3):
@@ -41,3 +47,7 @@ FLAG:
     encoded_flag = "!?}De!e3d_5n_nipaOw_3eTR3bt4{_THB"
     decoded_flag = decode_flag(encoded_flag)
     print(decoded_flag)
+
+FLAG:
+
+    HTB{4_b3tTeR_w3apOn_i5_n3edeD!?!}
