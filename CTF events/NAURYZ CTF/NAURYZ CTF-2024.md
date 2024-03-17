@@ -4,7 +4,7 @@
 
 ## WEB
 
-### Asena WEB
+### Asena - WEB
 
 ![image](https://github.com/zer00d4y/writeups/assets/128820441/2bde51ec-c7e1-4b52-b662-aaa89ebfb436)
 
@@ -17,3 +17,29 @@ SSTI vulnerability
 FLAG:
 
     nrzCTF{1_9RE3t_YOU_d3sCEnDAn7_OF_Asen@}
+
+# OSINT
+
+### Ganegabla - OSINT
+
+Find Ganegabla's YouTube channel
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/7170a811-6efd-42ca-a85d-4417b3e486b8)
+
+`nrzCTF{y0u_` `tub3_`
+
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/7733dd93-7f46-4729-b6c9-a12d4a0e616f)
+
+`0s1nt_`
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/88580224-44e8-48f9-a824-cdcd9c76ebf3)
+
+`t4sk}`
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/5e4cec51-ef22-4d0a-9f21-a10d50eaab82)
+
+FLAG:
+
+    nrzCTF{y0u_tub3_0s1nt_t4sk}
+
