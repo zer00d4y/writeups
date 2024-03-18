@@ -25,5 +25,4 @@ FLAG:
 
     lactf{that_button_was_definitely_not_one_of_the_terms}
 
-### Web - flaglang
 
