@@ -32,6 +32,30 @@ FLAG:
 
     nrzCTF{h0r5e_sh0p_cla55ic_sql1}
 
+### Aldarkose - WEB
+
+Write the format of the flag `nrzCTF{}`
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/dbada843-c6a2-4a60-b2f1-2915749cd093)
+
+FLAG:
+
+    nrzCTF{t3mpl4t3_by_4ld4r_k0s3_320948u239}
+
+# Crypto
+
+### Weird Encoding - Crypto
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/85a5f236-f8df-4395-b439-ce0f513e69e9)
+
+It's a spiral cipher, just use the online decoder at  https://www.dcode.fr/spiral-cipher
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/8b34eeb3-2e51-4f6b-b72e-939338b30639)
+
+FLAG:
+
+    nrzCTF{5p1_R@l_3nC0_d1nG}
+
 # OSINT
 
 ### Ganegabla - OSINT
@@ -41,7 +65,6 @@ Find Ganegabla's YouTube channel
 ![image](https://github.com/zer00d4y/writeups/assets/128820441/7170a811-6efd-42ca-a85d-4417b3e486b8)
 
 `nrzCTF{y0u_` `tub3_`
-
 
 ![image](https://github.com/zer00d4y/writeups/assets/128820441/7733dd93-7f46-4729-b6c9-a12d4a0e616f)
 
