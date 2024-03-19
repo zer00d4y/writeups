@@ -53,6 +53,9 @@ ctrl + z
 
 ![image](https://github.com/zer00d4y/writeups/assets/128820441/0a989f9d-3fc2-42db-9685-fe58d14f5d5f)
 
+![image](https://github.com/zer00d4y/writeups/assets/128820441/5e20af03-b52e-418d-b107-2845cb3b948f)
+
+## Privilege Escalation
 
 
 
