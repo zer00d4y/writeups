@@ -27,7 +27,7 @@ Wappalyzer Ruby
 
 ![image](https://github.com/zer00d4y/writeups/assets/128820441/796cd7b9-4510-41b3-bf95-7a3a0039db5f)
 
-
+![image](https://github.com/zer00d4y/writeups/assets/128820441/e3a312e6-40b0-439c-98ba-e9bb9d127c8b)
 
 ![image](https://github.com/zer00d4y/writeups/assets/128820441/e63b50c3-2697-41fe-916a-56e07e04e2a9)
 
