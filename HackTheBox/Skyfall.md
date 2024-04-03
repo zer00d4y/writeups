@@ -150,7 +150,7 @@ Get the user flag
     Successfully connected to Vault: http://prd23-vault-internal.skyfall.htb
     Checking seal status
     Vault sealed: false
-    exit
+    askyy@skyfall:~$ exit
 
   connect as root
 
