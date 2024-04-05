@@ -30,7 +30,11 @@ https://github.com/b3nzino/myfiles
 
 Look to address.zip
 
+Archive protected with password, brute it using john 
+
 ![image](https://github.com/zer00d4y/writeups/assets/128820441/175d4e08-2e6d-48c3-9df3-be5329a99b3b)
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/4f2b159e-d3b4-4d99-8658-2a75b140152a)
 
 Password for archive is `Elle`
 
@@ -50,6 +54,11 @@ Visit pastebin url
      
     My addresses that are reported by people:
     bc1qxk6wqv9azrt5x79g5mz3nedwm2rc4qdknkwkf9
+
+Here is bitcoin addresses 
+
+
+
 
 
 
