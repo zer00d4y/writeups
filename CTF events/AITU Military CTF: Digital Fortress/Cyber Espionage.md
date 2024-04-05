@@ -57,7 +57,35 @@ Visit pastebin url
 
 Here is bitcoin addresses 
 
+Now we found last addres in reported scam BTC adresses
 
+https://solana.chainabuse.com/address/bc1qxk6wqv9azrt5x79g5mz3nedwm2rc4qdknkwkf9
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/7fb86b58-aed0-47e4-920d-77eccc6eb3cd)
+
+Chech pastebin 
+
+https://pastebin.com/x83ExwNR
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/974ef89b-7c0e-4c63-9e34-42be8018c87a)
+
+But, we see nothing here, chech with web archive 
+
+https://web.archive.org/web/20240000000000*/https://pastebin.com/x83ExwNR
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/2d2c945a-cfc9-4b00-9f79-0ad58084c7ae)
+
+https://web.archive.org/web/20240404190309/https://pastebin.com/x83ExwNR
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/1cbc6910-c5f2-4e8a-bd35-75ca881a6169)
+
+    Proton Mail:
+    lionelbebra@proton.me
+    Elle2014!@#
+
+FLAG:
+
+    aitumilitaryctf{lionelbebra@proton.me_Elle2014!@#}
 
 
 
