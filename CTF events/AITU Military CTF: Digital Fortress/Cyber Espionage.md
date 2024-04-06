@@ -63,13 +63,13 @@ https://solana.chainabuse.com/address/bc1qxk6wqv9azrt5x79g5mz3nedwm2rc4qdknkwkf9
 
 ![image](https://github.com/zer00d4y/writeups/assets/128820441/7fb86b58-aed0-47e4-920d-77eccc6eb3cd)
 
-Chech pastebin 
+Check pastebin 
 
 https://pastebin.com/x83ExwNR
 
 ![image](https://github.com/zer00d4y/writeups/assets/128820441/974ef89b-7c0e-4c63-9e34-42be8018c87a)
 
-But, we see nothing here, chech with web archive 
+But, we see nothing here, check with web archive 
 
 https://web.archive.org/web/20240000000000*/https://pastebin.com/x83ExwNR
 
