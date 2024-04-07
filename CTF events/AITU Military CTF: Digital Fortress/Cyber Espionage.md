@@ -18,7 +18,7 @@ Flag format: aitumilitaryctf{email_password}
 
 --------------------------------------------------------------------------------------------------------
 
-Seach `b3nzino` and found his github profile
+Search `b3nzino` and found his github profile
 
 ![image](https://github.com/zer00d4y/writeups/assets/128820441/bdad799d-1dd7-4548-b4c6-fc6bd29433c3)
 
