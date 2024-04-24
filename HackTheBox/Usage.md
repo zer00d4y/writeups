@@ -87,3 +87,5 @@ Let's try to reset the password and save the request to Burp
 
 ![image](https://github.com/zer00d4y/writeups/assets/128820441/b7181ba7-3777-45a9-8af2-93fbc4dcf724)
 
+    ' AND 4720=BENCHMARK(5000000,MD5(0x4866544a))-- SwMa---
+
