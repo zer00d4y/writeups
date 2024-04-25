@@ -83,6 +83,8 @@ http://admin.usage.htb
 
 ![image](https://github.com/zer00d4y/writeups/assets/128820441/769b529d-c707-4708-b870-cf16138a1efa)
 
+## SQLmap
+
 Let's try to reset the password and save the request to Burp
 
 ![image](https://github.com/zer00d4y/writeups/assets/128820441/b7181ba7-3777-45a9-8af2-93fbc4dcf724)
