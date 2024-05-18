@@ -87,4 +87,18 @@ Credentials
 
 ![image](https://github.com/zer00d4y/writeups/assets/128820441/e9ed66d5-affc-402c-aba9-c26516e7ec11)
 
+Generate PDF file
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/d2d50e95-bc52-44e7-bf60-7296b58b92c0)
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/8a278ab7-ba75-4131-8f18-5797bff0bac9)
+
+Intercept the request 
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/f6003bd6-c1ff-47d3-845a-abd473e88010)
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/d130ebd7-3302-419e-89c9-37ec5b5521d3)
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/08670784-9cae-4b7b-9a18-f00310cbf2c3)
+
 
