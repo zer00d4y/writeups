@@ -8,6 +8,8 @@ CTFtime link: https://ctftime.org/event/2364
 
 ### WEB - iDoor
 
+Simple IDOR (Insecure direct object references), where camera ID encoded to sha256 hash 
+
 ![image](https://github.com/zer00d4y/writeups/assets/128820441/ec62cf43-5e26-482b-b84d-a77092dab7f2)
 
 4fc82b26aecb47d2868c4efbe3581732a3e7cbcc6c2efb32062c08170a05eeb8 -> 11
@@ -28,7 +30,7 @@ FLAG:
 
 ![image](https://github.com/zer00d4y/writeups/assets/128820441/82761ac8-dce5-47f0-a5fd-493ff2479213)
 
-/robots.txt
+Check /robots.txt
 
 ![image](https://github.com/zer00d4y/writeups/assets/128820441/72b69c6d-affa-433a-86aa-809ea1ddb34a)
 
@@ -48,6 +50,8 @@ FLAG:
 
 ***Turns out they make a good Warmups CTF challenge, too!***
 
+Just copy and paste the text, you'll see the hidden flag there. 
+
 ![image](https://github.com/zer00d4y/writeups/assets/128820441/58c9885c-789d-4b6a-8954-9496cb2f04d5)
 
 ![image](https://github.com/zer00d4y/writeups/assets/128820441/23bd8869-fce1-41b3-9ea5-011a56a0c7ff)
@@ -61,6 +65,8 @@ FLAG:
 ***Uriel was browsing the web and he saw this big long blob of text in his address bar! He was telling me about it but I don't remember everything he said... I think he mentioned something like "it happened twice?"***
 
     %25%36%36%25%36%63%25%36%31%25%36%37%25%37%62%25%33%38%25%36%35%25%36%36%25%36%35%25%36%32%25%33%36%25%33%36%25%36%31%25%33%37%25%33%31%25%33%39%25%36%32%25%33%37%25%33%35%25%36%31%25%33%34%25%36%32%25%33%37%25%36%33%25%33%36%25%33%33%25%33%34%25%36%34%25%33%38%25%33%38%25%33%35%25%33%37%25%33%38%25%33%38%25%36%34%25%36%36%25%36%33%25%37%64
+
+This is URL ecnoded flag, try to decode 2 times   
 
 ![image](https://github.com/zer00d4y/writeups/assets/128820441/2331f047-6dfe-4554-b758-1395256ba2a9)
 
@@ -87,6 +93,8 @@ FLAG:
 ### Warmups - Twine
 
 ***Google tells me that twine means: "strong thread or string consisting of two or more strands of hemp, cotton, or nylon twisted together."***
+
+Just read png with cat or open with text editor 
 
 ![twine](https://github.com/zer00d4y/writeups/assets/128820441/a3cf89a6-c283-4b02-a27d-22df4868bbc1)
 
