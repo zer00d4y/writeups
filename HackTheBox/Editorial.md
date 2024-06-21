@@ -50,7 +50,7 @@ Get the user flag!
 
 ![image](https://github.com/zer00d4y/writeups/assets/128820441/a7e04a02-398a-4728-a9a2-03d4762f1c93)
 
-## Root
+## Privilege Escalation
 
 ![image](https://github.com/zer00d4y/writeups/assets/128820441/3ad2f8e3-b7e9-425b-8604-db6ca4fdcf5b)
 
