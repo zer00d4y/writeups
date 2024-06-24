@@ -20,6 +20,12 @@ Add domain name to `/etc/hosts`
 
 ![image](https://github.com/zer00d4y/writeups/assets/128820441/41e07ae5-ffed-4142-8dda-129aabe270ca)
 
+# Exploatation
+
+## SSRF 
+
+Here we see signs of the SSRF's (Server-Side Request Forgery) vulnerability 
+
 ![image](https://github.com/zer00d4y/writeups/assets/128820441/c4d5cf44-7914-4f2c-ab85-042f8fec1cf3)
 
 ![image](https://github.com/zer00d4y/writeups/assets/128820441/f756318a-78a9-4d6c-9df6-b2b89f9b9403)
