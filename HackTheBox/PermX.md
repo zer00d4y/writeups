@@ -37,6 +37,15 @@
 
 `ffuf -w /usr/share/wordlists/SecLists/Discovery/Web-Content/big.txt -u http://permx.htb -H "Host:FUZZ.permx.htb" -fw 18`
 
+    
+        /'___\  /'___\           /'___\       
+       /\ \__/ /\ \__/  __  __  /\ \__/       
+       \ \ ,__\\ \ ,__\/\ \/\ \ \ \ ,__\      
+        \ \ \_/ \ \ \_/\ \ \_\ \ \ \ \_/      
+         \ \_\   \ \_\  \ \____/  \ \_\       
+          \/_/    \/_/   \/___/    \/_/       
+
+
     lms                     [Status: 200, Size: 19347, Words: 4910, Lines: 353, Duration: 201ms]
     www                     [Status: 200, Size: 36182, Words: 12829, Lines: 587, Duration: 175ms]
 
