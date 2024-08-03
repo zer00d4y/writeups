@@ -20,5 +20,7 @@
     3269/tcp filtered globalcatLDAPssl
     Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
+### Sub-domain enumeration with ffuf
 
+`crm.board.htb`
     
