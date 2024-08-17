@@ -22,4 +22,4 @@
     |_      httponly flag not set
     Service Info: Host: sea.htb; OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
-
+### Directory enumeration with Dirsearch
