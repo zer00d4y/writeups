@@ -22,4 +22,17 @@
     |_      httponly flag not set
     Service Info: Host: sea.htb; OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
+Add `sea.htb` to `/etc/hosts`
+
+    echo "10.10.11.28 sea.htb" | sudo tee -a /etc/hosts 
+
 ### Directory enumeration with Dirsearch
+
+`python3 dirsearch.py -e php,html,js -u http://sea.htb 404,403,401,307`
+                                      
+    200 -    3KB - /404                                                                                   
+    200 -    3KB - /contact.php                                      
+    301 -  228B  - /data  ->  http://sea.htb/data/                                                       
+    301 -  232B  - /messages  ->  http://sea.htb/messages/                                     
+    301 -  231B  - /plugins  ->  http://sea.htb/plugins/             
+    301 -  230B  - /themes  ->  http://sea.htb/themes/                   
