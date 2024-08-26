@@ -36,3 +36,9 @@ Add `sea.htb` to `/etc/hosts`
     301 -  232B  - /messages  ->  http://sea.htb/messages/                                     
     301 -  231B  - /plugins  ->  http://sea.htb/plugins/             
     301 -  230B  - /themes  ->  http://sea.htb/themes/                   
+
+`python3 dirsearch.py -e php,html,js -u http://sea.htb/themes 404,403,401,307 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt`
+
+    200 -    4KB - /themes/home                                      
+    200 -    3KB - /themes/404                                       
+    301 -  235B  - /themes/bike  ->  http://sea.htb/themes/bike/  
