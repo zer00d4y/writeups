@@ -39,6 +39,10 @@ Add `sea.htb` to `/etc/hosts`
 
 ![image](https://github.com/user-attachments/assets/fc57769e-68e8-428d-a7be-641db54399e1)
 
+And so we found the directory `/themes/` where we don't have access. Let's try to find directories in this section as well
+
+With using `directory-list-2.3-medium.txt` wordlist.
+
 `python3 dirsearch.py -e php,html,js -u http://sea.htb/themes 404,403,401,307 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt`
 
     200 -    4KB - /themes/home                                      
@@ -46,6 +50,8 @@ Add `sea.htb` to `/etc/hosts`
     301 -  235B  - /themes/bike  ->  http://sea.htb/themes/bike/
 
 ![image](https://github.com/user-attachments/assets/f354c8b8-084e-4394-87b7-a8e128c3c87a)
+
+Try again for `/themes/bike/` directory
    
 `python3 dirsearch.py -e php,html,js -u http://sea.htb/themes/bike/ 404,403,401,307 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt`
 
