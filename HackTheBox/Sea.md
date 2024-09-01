@@ -111,3 +111,18 @@ ssh amay@sea.htb
 
 ## Privilege Escalation
 
+netstat
+
+![image](https://github.com/user-attachments/assets/ecc3a342-afa2-45df-96fc-c9c74e062c18)
+
+ssh -L 8888:localhost:8080 amay@sea.htb
+
+![image](https://github.com/user-attachments/assets/2c1944aa-5ab1-4b39-bf32-347224052a5c)
+
+![image](https://github.com/user-attachments/assets/a28c03fd-c6de-4f11-ad04-c10e51f3dc4c)
+
+Use amay's credentials `amay`:`mychemicalromance`
+
+![image](https://github.com/user-attachments/assets/34de5860-9986-4873-a5f8-e0cdd1108884)
+
+
