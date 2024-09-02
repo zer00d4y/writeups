@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/ccbebab0-0dc5-4835-ac10-825e5dbfcd1c)# Prometheon Write-up
+# Prometheon Write-up
 
 Category: AI - ML 
 
