@@ -36,6 +36,4 @@ Password for 5 lvl `pyre`
 
 FLAG:
 
-![image](https://github.com/user-attachments/assets/7c235596-2d92-4403-a619-e44e05d6c347)
-
-    HTB{c0ngr4tul4t10ns_0n_y0ur_j0urn3y_us3_th3_f1r3_wis3ly}
+YEA, YOU CAN STILL FIND THE DELETED FLAG IN THE COMMIT HISTORY, BUT I NEED TO REMOVE IT FROM THAT SPACE 
