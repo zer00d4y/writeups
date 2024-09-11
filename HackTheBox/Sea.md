@@ -26,6 +26,8 @@ Add `sea.htb` to `/etc/hosts`
 
     echo "10.10.11.28 sea.htb" | sudo tee -a /etc/hosts 
 
+![image](https://github.com/user-attachments/assets/f9dac408-58f9-4866-8962-edfa1ce692e9)
+
 ### Directory enumeration with Dirsearch
 
 `python3 dirsearch.py -e php,html,js -u http://sea.htb 404,403,401,307`
