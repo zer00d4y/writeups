@@ -2,6 +2,16 @@
 
 ![image](https://github.com/user-attachments/assets/aadb302f-e910-4f33-ac24-ef0ba71a2355)
 
+## Not broken
+
+File -> export object -> HTTP
+
+![image](https://github.com/user-attachments/assets/efd0be5b-9507-4357-ba2e-1f198689b7e1)
+
+Save largest packet and open it
+
+We can see that is request to image
+
 ## WEB
 
 ### WEB - Примечание
