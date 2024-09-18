@@ -12,6 +12,10 @@ Save largest packet and open it
 
 We can see that is request to image
 
+![image](https://github.com/user-attachments/assets/ae510eff-c398-41c9-b681-03047ea8723a)
+
+Delete everything up to %PNG and save as a png file 
+
 ## WEB
 
 ### WEB - Примечание
