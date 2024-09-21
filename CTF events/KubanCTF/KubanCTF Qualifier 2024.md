@@ -6,9 +6,11 @@
 
 File -> export object -> HTTP
 
-![image](https://github.com/user-attachments/assets/efd0be5b-9507-4357-ba2e-1f198689b7e1)
+![image](https://github.com/user-attachments/assets/48f099bc-54bd-4ef4-aaf6-5dcd30c35410)
 
 Save largest packet and open it
+
+![image](https://github.com/user-attachments/assets/efd0be5b-9507-4357-ba2e-1f198689b7e1)
 
 We can see that is request to image
 
