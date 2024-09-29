@@ -201,6 +201,12 @@ Use amay's credentials `amay`:`mychemicalromance`
 
 ![image](https://github.com/user-attachments/assets/7dc9102d-f74e-4398-ab6d-40f7e158c59e)
 
+Here we can see that there is a filter that prevents us from reading data that requires root privileges 
+
 ![image](https://github.com/user-attachments/assets/1e441ca4-140d-4aa5-8bc4-c3e701b0aaa2)
 
+By adding `;` to our payload, we can bypass the filter by reading the root user's files. 
+
 ![image](https://github.com/user-attachments/assets/b0f85efd-a295-4c8c-8e18-998fbfd06dea)
+
+So, we can get root flag! 
