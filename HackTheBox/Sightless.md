@@ -30,3 +30,10 @@
     SF:20being\x20more\x20creative\r\n");
     Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
+Add `sightless.htb` address to `/etc/hosts`
+
+    echo "10.10.11.32 sightless.htb" | sudo tee -a /etc/hosts  
+
+sightless.htb
+
+![image](https://github.com/user-attachments/assets/458c45f0-8807-4df4-a124-72b0bb34433a)
