@@ -37,3 +37,38 @@ Add `sightless.htb` address to `/etc/hosts`
 sightless.htb
 
 ![image](https://github.com/user-attachments/assets/458c45f0-8807-4df4-a124-72b0bb34433a)
+
+![image](https://github.com/user-attachments/assets/b1dd73b5-b6e7-4b93-8d4c-11ffbeac1b0a)
+
+Add `sqlpad` sub-domain to `/etc/hosts`
+
+    echo "10.10.11.32 sqlpad.sightless.htb" | sudo tee -a /etc/hosts 
+
+![image](https://github.com/user-attachments/assets/51a022a9-4317-45e9-aae4-6a7bd9009c4a)
+
+## Exploitation 
+
+CVE-2022-0944
+
+![image](https://github.com/user-attachments/assets/f9181a40-0516-4487-8ec4-b31e559ffe0d)
+
+![image](https://github.com/user-attachments/assets/a53607cb-511d-49d9-aa37-3729d65a81b6)
+
+![image](https://github.com/user-attachments/assets/c1057d75-adf2-405d-b343-a713ef47c5d7)
+
+![image](https://github.com/user-attachments/assets/fa8f6361-6a99-46b1-a903-437b720231a8)
+
+    hashcat -m 1800 -a 0 hash /home/kali/wordlist/rockyou.txt
+
+Using mode `1800` (sha512crypt $6$, SHA512 (Unix)) for hashcat
+
+`$6$jn8fwk6LVJ9IYw30$qwtrfWTITUro8fEJbReUc7nXyx2wwJsnYdZYm9nMQDHP8SYm33uisO9gZ20LGaepC3ch6Bb2z/lEpBM90Ra4b.`:`blindside`
+`$6$mG3Cp2VPGY.FDE8u$KVWVIHzqTzhOSYkzJIpFc2EsgmqvPa.q2Z9bLUU6tlBWaEwuxCDEP9UFHIXNUcF2rBnsaFYuJa6DUh/pL2IJD/:`insaneclownposse`
+
+Now we get `root` and `michael` password try to connet to SSH
+
+## User Flag 
+
+Connect via SSH and get the user flag!
+
+![image](https://github.com/user-attachments/assets/7de140d9-87ba-4002-947a-cec108f2e333)
