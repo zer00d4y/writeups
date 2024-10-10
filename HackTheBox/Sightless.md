@@ -63,7 +63,7 @@ CVE-2022-0944
 Using mode `1800` (sha512crypt $6$, SHA512 (Unix)) for hashcat
 
 `$6$jn8fwk6LVJ9IYw30$qwtrfWTITUro8fEJbReUc7nXyx2wwJsnYdZYm9nMQDHP8SYm33uisO9gZ20LGaepC3ch6Bb2z/lEpBM90Ra4b.`:`blindside`
-`$6$mG3Cp2VPGY.FDE8u$KVWVIHzqTzhOSYkzJIpFc2EsgmqvPa.q2Z9bLUU6tlBWaEwuxCDEP9UFHIXNUcF2rBnsaFYuJa6DUh/pL2IJD/:`insaneclownposse`
+`$6$mG3Cp2VPGY.FDE8u$KVWVIHzqTzhOSYkzJIpFc2EsgmqvPa.q2Z9bLUU6tlBWaEwuxCDEP9UFHIXNUcF2rBnsaFYuJa6DUh/pL2IJD/`:`insaneclownposse`
 
 Now we get `root` and `michael` password try to connet to SSH
 
@@ -72,3 +72,8 @@ Now we get `root` and `michael` password try to connet to SSH
 Connect via SSH and get the user flag!
 
 ![image](https://github.com/user-attachments/assets/7de140d9-87ba-4002-947a-cec108f2e333)
+
+## Privilege escalation
+
+![image](https://github.com/user-attachments/assets/c870fb88-b5ff-4009-aaed-6219c003061c)
+
