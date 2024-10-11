@@ -91,3 +91,25 @@ So, try to portforward
 
 ![image](https://github.com/user-attachments/assets/20e15a94-b507-49bf-889a-66931c661f60)
 
+    ssh michael@10.10.11.32 \
+    -L 127.0.0.1:8080:127.0.0.1:8080 \
+    -L 127.0.0.1:41467:127.0.0.1:41467 \
+    -L 127.0.0.1:39273:127.0.0.1:39273 \
+    -L 127.0.0.1:33060:127.0.0.1:33060 \
+    -L 127.0.0.1:3000:127.0.0.1:3000 \
+    -L 127.0.0.1:39131:127.0.0.1:39131 \
+    -L 127.0.0.1:3306:127.0.0.1:3306 \
+    -L 127.0.0.53:53:127.0.0.53:53
+
+![image](https://github.com/user-attachments/assets/2e21b583-4ff2-48c9-81da-129ae46fd51f)
+
+![image](https://github.com/user-attachments/assets/774d3664-88ae-4b41-b3d1-9d7180c97a69)
+
+PHP -> PHP-FPM versions -> Create new PHP version
+
+![image](https://github.com/user-attachments/assets/4471585c-38d2-4339-9544-64024f5fa32a)
+
+Get the root flag!
+
+![image](https://github.com/user-attachments/assets/41088881-074b-4d72-9ef7-e640d5ade041)
+
