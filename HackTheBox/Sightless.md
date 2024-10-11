@@ -65,7 +65,7 @@ Using mode `1800` (sha512crypt $6$, SHA512 (Unix)) for hashcat
 `$6$jn8fwk6LVJ9IYw30$qwtrfWTITUro8fEJbReUc7nXyx2wwJsnYdZYm9nMQDHP8SYm33uisO9gZ20LGaepC3ch6Bb2z/lEpBM90Ra4b.`:`blindside`
 `$6$mG3Cp2VPGY.FDE8u$KVWVIHzqTzhOSYkzJIpFc2EsgmqvPa.q2Z9bLUU6tlBWaEwuxCDEP9UFHIXNUcF2rBnsaFYuJa6DUh/pL2IJD/`:`insaneclownposse`
 
-Now we get `root` and `michael` password try to connet to SSH
+Now we get `root` and `michael` passwords, try connecting to SSH with this credentials
 
 ## User Flag 
 
@@ -75,5 +75,19 @@ Connect via SSH and get the user flag!
 
 ## Privilege escalation
 
+    netstat -tnlp
+
 ![image](https://github.com/user-attachments/assets/c870fb88-b5ff-4009-aaed-6219c003061c)
+
+We can see open 8080 port on internal network 
+
+So, try to portforward
+
+    ssh michael@10.10.11.32  -L 127.0.0.1:8080:127.0.0.1:8080
+
+![image](https://github.com/user-attachments/assets/30f6bc1f-f6bb-413f-b27d-4fb0ddb8db49)
+
+127.0.0.1:8080
+
+![image](https://github.com/user-attachments/assets/20e15a94-b507-49bf-889a-66931c661f60)
 
