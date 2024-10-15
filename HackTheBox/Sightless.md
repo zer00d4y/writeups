@@ -103,6 +103,8 @@ So, try to portforward
 
 ![image](https://github.com/user-attachments/assets/2e21b583-4ff2-48c9-81da-129ae46fd51f)
 
+![image](https://github.com/user-attachments/assets/35948cdb-b640-40bf-91bb-bb4d19ead3de)
+
 ![image](https://github.com/user-attachments/assets/774d3664-88ae-4b41-b3d1-9d7180c97a69)
 
 PHP -> PHP-FPM versions -> Create new PHP version
