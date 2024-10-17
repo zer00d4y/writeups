@@ -48,7 +48,11 @@ Add `sqlpad` sub-domain to `/etc/hosts`
 
 ## Exploitation 
 
-CVE-2022-0944
+looking for an exploit for SQLpad and found `CVE-2022-0944`
+
+Template injection in connection test endpoint leads to RCE in GitHub repository sqlpad/sqlpad prior to 6.10.1.
+
+### CVE-2022-0944
 
 ![image](https://github.com/user-attachments/assets/f9181a40-0516-4487-8ec4-b31e559ffe0d)
 
