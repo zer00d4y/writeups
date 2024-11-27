@@ -29,6 +29,14 @@ FLAG
 
     STS{th1s_fl4g_1s_e4sy}
 
-### Task - 
+### Task - Entrance
+
+![image](https://github.com/user-attachments/assets/946ab524-7221-4d4f-ab9c-1cc16189518a)
+
+Password: `U2Qqw26nKfzt2FTTc4xKGp4M5Md3Ch`
     
 ![UchihaItachi](https://github.com/user-attachments/assets/2720ac06-cf09-42db-9bef-6d0a9a7eaf11)
+
+FLAG:
+
+    STS{L0g1n3d_Successfull_001}
