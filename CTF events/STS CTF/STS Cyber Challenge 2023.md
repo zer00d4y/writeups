@@ -4,6 +4,8 @@
 
 ### Task - Myktybek  
 
+Encode it to Base64
+
 {"username":"Myktybek","email":"myktybek@moshnyi.bala","role":"admin"}
 
 eyJ1c2VybmFtZSI6Ik15a3R5YmVrIiwiZW1haWwiOiJteWt0eWJla0Btb3NobnlpLmJhbGEiLCJyb2xlIjoiYWRtaW4ifQ==
@@ -31,9 +33,19 @@ FLAG
 
 ### Task - Entrance
 
+We can see the authorization page and a picture in the background.
+
+Download the image and check for meta data.
+
+You can use `exiftool`
+
+`exiftool filename.png`
+
 ![image](https://github.com/user-attachments/assets/946ab524-7221-4d4f-ab9c-1cc16189518a)
 
 Password: `U2Qqw26nKfzt2FTTc4xKGp4M5Md3Ch`
+
+You can login with this password and see the flag!
     
 ![UchihaItachi](https://github.com/user-attachments/assets/2720ac06-cf09-42db-9bef-6d0a9a7eaf11)
 
