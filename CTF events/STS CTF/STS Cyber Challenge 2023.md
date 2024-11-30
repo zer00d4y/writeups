@@ -4,11 +4,15 @@
 
 ### Task - Myktybek  
 
+We see that the data is transmitted via cookie in base64 format.
+
+Try to change role to `admin` and send request.
+
+    {"username":"Myktybek","email":"myktybek@moshnyi.bala","role":"admin"}
+
 Encode it to Base64
 
-{"username":"Myktybek","email":"myktybek@moshnyi.bala","role":"admin"}
-
-eyJ1c2VybmFtZSI6Ik15a3R5YmVrIiwiZW1haWwiOiJteWt0eWJla0Btb3NobnlpLmJhbGEiLCJyb2xlIjoiYWRtaW4ifQ==
+    eyJ1c2VybmFtZSI6Ik15a3R5YmVrIiwiZW1haWwiOiJteWt0eWJla0Btb3NobnlpLmJhbGEiLCJyb2xlIjoiYWRtaW4ifQ==
 
 Request:
 
