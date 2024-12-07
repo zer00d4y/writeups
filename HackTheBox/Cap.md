@@ -122,8 +122,6 @@ IP config
 
 ![image](https://github.com/user-attachments/assets/f92207a3-25e2-4916-9916-64f7a61cc292)
 
-Network Status
-
 Security Snapshot
 
 ![image](https://github.com/user-attachments/assets/e9e48544-a992-4873-ab77-2ff74b04ffeb)
@@ -132,9 +130,13 @@ Security Snapshot
 
 ### IDOR
 
+We can see data `ID` at the URL, try to change ID number to `0`.
+
 http://10.10.10.245/data/0
 
 ![image](https://github.com/user-attachments/assets/3a7f9411-16db-4c4d-8934-b43ee62cb419)
+
+Download the traffic packets and see what's interesting about it.
 
 0.pcap
 
