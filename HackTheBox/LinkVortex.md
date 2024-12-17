@@ -26,5 +26,9 @@ Main page
 
 ![image](https://github.com/user-attachments/assets/8d7b2112-786e-415a-9e20-4b45ad71107a)
 
+### Directory enumeration with Dirsearch
 
+## Exploitation 
+
+### CVE-2023-40028
 
