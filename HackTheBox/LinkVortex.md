@@ -32,3 +32,4 @@ Main page
 
 ### CVE-2023-40028
 
+CVE-2023-40028 is a vulnerability in Ghost CMS that allows arbitrary file reads through improper file handling. 
