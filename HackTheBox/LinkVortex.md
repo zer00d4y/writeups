@@ -49,7 +49,15 @@ Main page
     [13:19:03] 200 -    1KB - /LICENSE                                          
     [13:21:07] 200 -   121B - /robots.txt                                        
     [13:22:03] 200 -   527B - /sitemap.xml                                       
-                                         
+
+`/robots.txt`
+
+![image](https://github.com/user-attachments/assets/0020976b-e733-4743-8ede-5e170b74f309)
+
+`/ghost/`
+
+![image](https://github.com/user-attachments/assets/0bd133c8-5ae1-4c5d-ba86-4da790dab444)
+
 
 ### Sub-Domain enumeration 
 
