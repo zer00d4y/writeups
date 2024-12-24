@@ -28,6 +28,33 @@ Main page
 
 ### Directory enumeration with Dirsearch
 
+`python3 dirsearch.py -u http://linkvortex.htb`
+
+      _|. _ _  _  _  _ _|_    v0.4.3                                                        
+     (_||| _) (/_(_|| (_| )                                                                 
+                                                                                            
+    Target: http://linkvortex.htb/
+    
+    [13:17:08] Scanning:                                                                    
+    [13:18:20] 301 -   179B - /assets  ->  /assets/                             
+    [13:18:24] 301 -     0B - /axis2-web//HappyAxis.jsp  ->  /axis2-web/HappyAxis.jsp/
+    [13:18:28] 301 -     0B - /axis//happyaxis.jsp  ->  /axis/happyaxis.jsp/    
+    [13:18:28] 301 -     0B - /axis2//axis2-web/HappyAxis.jsp  ->  /axis2/axis2-web/HappyAxis.jsp/
+    [13:18:38] 301 -     0B - /Citrix//AccessPlatform/auth/clientscripts/cookies.js  ->  /Citrix/AccessPlatform/auth/clientscripts/cookies.js/
+    [13:18:48] 301 -     0B - /engine/classes/swfupload//swfupload.swf  ->  /engine/classes/swfupload/swfupload.swf/
+    [13:18:48] 301 -     0B - /engine/classes/swfupload//swfupload_f9.swf  ->  /engine/classes/swfupload/swfupload_f9.swf/
+    [13:18:50] 301 -     0B - /extjs/resources//charts.swf  ->  /extjs/resources/charts.swf/
+    [13:18:50] 200 -   15KB - /favicon.ico                                      
+    [13:18:55] 301 -     0B - /html/js/misc/swfupload//swfupload.swf  ->  /html/js/misc/swfupload/swfupload.swf/
+    [13:19:03] 200 -    1KB - /LICENSE                                          
+    [13:21:07] 200 -   121B - /robots.txt                                        
+    [13:22:03] 200 -   527B - /sitemap.xml                                       
+                                         
+
+### Sub-Domain enumeration 
+
+
+
 ## Exploitation 
 
 ### CVE-2023-40028
