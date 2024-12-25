@@ -61,6 +61,13 @@ Main page
 
 ### Sub-Domain enumeration 
 
+Using Ffuf 
+
+    ffuf -w /usr/share/wordlists/seclists/Discovery/DNS/bitquark-subdomains-top100000.txt -u http://FUZZ.linkvortex.htb -H "Host: FUZZ.linkvortex.htb" -mc 200
+
+Found:
+
+
 
 
 ## Exploitation 
