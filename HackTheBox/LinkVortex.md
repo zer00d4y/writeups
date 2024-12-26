@@ -65,8 +65,9 @@ Using Ffuf
 
     ffuf -w /usr/share/wordlists/seclists/Discovery/DNS/bitquark-subdomains-top100000.txt -u http://FUZZ.linkvortex.htb -H "Host: FUZZ.linkvortex.htb" -mc 200
 
-Found:
+Find `dev` subdomain, so add to `/etc/hosts` and open!
 
+    sudo echo "10.10.11.47 dev.linkvortex.htb" | sudo tee -a /etc/hosts
 
 
 
