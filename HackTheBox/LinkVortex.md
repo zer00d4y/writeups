@@ -69,7 +69,9 @@ Find `dev` subdomain, so add to `/etc/hosts` and open!
 
     sudo echo "10.10.11.47 dev.linkvortex.htb" | sudo tee -a /etc/hosts
 
+Enumerate the directories for dev.linkvortex.htb
 
+`python3 dirsearch.py -u http://dev.linkvortex.htb`
 
 ## Exploitation 
 
