@@ -18,3 +18,14 @@
     |_http-title: Cat Sticker Shop
     |_http-server-header: Werkzeug/3.0.1 Python/3.8.10
    
+Main page:
+
+![image](https://github.com/user-attachments/assets/5bf7d47e-5961-4f0d-aa74-8a46616f41e8)
+
+Feedback page:
+
+![image](https://github.com/user-attachments/assets/df705f0c-d600-4d20-a7d3-cf840ce07851)
+
+## Exploitation
+
+### Blind XSS
