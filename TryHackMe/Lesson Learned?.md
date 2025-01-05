@@ -8,6 +8,8 @@ Login page:
 
 SQL injection 
 
+If you use the wrong payload, you will get an error and have to restart the machine.
+
 Payload:
 
     1' UNION SELECT null-- -
