@@ -69,10 +69,37 @@ Find `dev` subdomain, so add to `/etc/hosts` and open!
 
     sudo echo "10.10.11.47 dev.linkvortex.htb" | sudo tee -a /etc/hosts
 
+![image](https://github.com/user-attachments/assets/14c6ca4d-0ac6-4bcd-8a89-efe73e401c4b)
+
 Enumerate the directories for dev.linkvortex.htb
 
 `python3 dirsearch.py -u http://dev.linkvortex.htb`
 
+          _|. _ _  _  _  _ _|_    v0.4.3
+         (_||| _) (/_(_|| (_| )
+        
+        Scanning: 
+        301 -   239B - /.git  ->  http://dev.linkvortex.htb/.git/        
+        200 -   201B - /.git/config                                      
+        200 -    73B - /.git/description
+        200 -    41B - /.git/HEAD                                        
+        200 -   874B - /.git/info/                                       
+        200 -   240B - /.git/info/exclude
+        200 -   868B - /.git/logs/                                       
+        200 -   175B - /.git/logs/HEAD
+        200 -   147B - /.git/packed-refs                                 
+        200 -   869B - /.git/refs/
+        301 -   249B - /.git/refs/tags  ->  http://dev.linkvortex.htb/.git/refs/tags/
+        200 -    3KB - /.git/                                            
+        200 -    1KB - /.git/objects/                                    
+        200 -    3KB - /.git/hooks/                                      
+        200 -  691KB - /.git/index                                       
+        403 -   199B - /cgi-bin/                                         
+        200 -    2KB - /index.html                                       
+        403 -   199B - /server-status                                    
+        403 -   199B - /server-status/
+
+                                            
 ## Exploitation 
 
 ### CVE-2023-40028
