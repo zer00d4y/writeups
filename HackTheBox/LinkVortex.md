@@ -174,3 +174,7 @@ Credentials `bob@linkvortex.htb`:`fibber-talented-worth`
 ### Get the user flag!
 
 ![image](https://github.com/user-attachments/assets/830f92a3-f1b1-4840-9368-8a7f568046df)
+
+## Privilege Escalation
+
+    sudo -l
