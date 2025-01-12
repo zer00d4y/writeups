@@ -52,4 +52,24 @@ In source map file `/app.min.js.map`
 
 ![image](https://github.com/user-attachments/assets/58452e91-e018-4697-a19d-c716f95e1c17)
 
+## Misc
 
+### Misc - Surgery
+
+I was thinking of getting some facial contouring plastic surgery done, but didn't know who to go to. My friend said they had a recommendation for a doctor specializing in that, but only sent me this photo of some building. Who's the doctor? Before submitting, wrap the doctor's name in uoftctf{}. Special characters allowed, [First] [Last] format.
+
+For example, if the name was Jean-Pierre Brehier, the flag would be uoftctf{Jean-Pierre Brehier}
+
+![image](https://github.com/user-attachments/assets/6fdd0ce0-632d-4995-92dc-82b8a35d425f)
+
+### Misc - Math Test
+
+### Misc - Sanity Check
+
+## Crypto
+
+### Crypto - Funny Cipher
+
+A wheelbarrow ran over the flag. Can you fix it?
+
+`60_ZMZ_GBWKNREM_KRA__LQM}WEPRGQL__Q_{RWW_M_KIAGPMNMRXDLM_FMWLDQ0BOIAMNPG`
