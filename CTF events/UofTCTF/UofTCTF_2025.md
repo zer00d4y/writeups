@@ -1,4 +1,4 @@
-# UofTCTF 2024 Write-up
+# UofTCTF 2025 Write-up
 
 University of Toronto CTF 2025
 
