@@ -60,7 +60,7 @@ I was thinking of getting some facial contouring plastic surgery done, but didn'
 
 For example, if the name was Jean-Pierre Brehier, the flag would be uoftctf{Jean-Pierre Brehier}
 
-![image](https://github.com/user-attachments/assets/6fdd0ce0-632d-4995-92dc-82b8a35d425f)
+<img src="https://github.com/user-attachments/assets/6fdd0ce0-632d-4995-92dc-82b8a35d425f" width="350" height="350"> 
 
 ### Misc - Math Test
 
