@@ -1,4 +1,4 @@
-# UofTCTF 2024 Write-up
+# UofTCTF 2025 Write-up
 
 University of Toronto CTF 2025
 
@@ -64,7 +64,19 @@ For example, if the name was Jean-Pierre Brehier, the flag would be uoftctf{Jean
 
 ### Misc - Math Test
 
+![image](https://github.com/user-attachments/assets/a96b4a5d-9deb-454e-ae5d-a24f3e6af938)
+
+FLAG:
+
+    uoftctf{7h15_15_b451c_10_7357_d16u153d_45_4_m47h_7357}
+
 ### Misc - Sanity Check
+
+<img src="https://github.com/user-attachments/assets/b91025a4-9868-4fed-8cb3-bd6d33ef80c5" width="350" height="350"> 
+
+FLAG:
+
+    uoftctf{welcome_to_uoftctf_2025!!!!!}
 
 ## Crypto
 
