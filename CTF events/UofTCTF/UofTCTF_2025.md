@@ -170,3 +170,34 @@ LWPMGMP{NRN_XWL_BDWO_MZA_PRIQM_QLKQMRMLMRWD_GRFZAI_NEMAQ_KEGB_MW_600_KG}
 FLAG:
 
 	UOFTCTF{DID_YOU_KNOW_THE_FIRST_SUBSTITUTION_CIPHER_DATES_BACK_TO_600_BC}
+
+## Forensics
+
+### Forensics - Decrypt Me
+
+`hashcat -m 13000 -a 0 hash.txt /usr/share/wordlists/rockyou.txt`
+
+	$rar5$16$1d7cb8859a6c3c8e30a9db7a501811ac$15$280234db9d29c6ab216b74e6a89ec226$8$d12d4ba211b9c642:toronto416
+	                                                          
+	Session..........: hashcat
+	Status...........: Cracked
+	Hash.Mode........: 13000 (RAR5)
+	Hash.Target......: $rar5$16$1d7cb8859a6c3c8e30a9db7a501811ac$15$280234...b9c642
+	Time.Started.....: Tue Jan 14 01:35:07 2025 (3 hours, 6 mins)
+	Time.Estimated...: Tue Jan 14 04:41:53 2025 (0 secs)
+	Kernel.Feature...: Pure Kernel
+	Guess.Base.......: File (/usr/share/wordlists/rockyou.txt)
+	Guess.Queue......: 1/1 (100.00%)
+	Speed.#1.........:      475 H/s (12.10ms) @ Accel:32 Loops:1024 Thr:1 Vec:8
+	Recovered........: 1/1 (100.00%) Digests (total), 1/1 (100.00%) Digests (new)
+	Progress.........: 3118272/14344385 (21.74%)
+	Rejected.........: 0/3118272 (0.00%)
+	Restore.Point....: 3118080/14344385 (21.74%)
+	Restore.Sub.#1...: Salt:0 Amplifier:0-1 Iteration:32768-32799
+	Candidate.Engine.: Device Generator
+	Candidates.#1....: toroscolor3407 -> toroha
+	Hardware.Mon.#1..: Util: 72%
+
+FLAG:
+
+	uoftctf{ads_and_aes_are_one_letter_apart}
