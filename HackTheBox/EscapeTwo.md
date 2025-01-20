@@ -128,6 +128,10 @@ First name, Last name / Email / Username / Password
 
 ### MSSQLServer
 
+    git clone https://github.com/SecureAuthCorp/impacket.git
+
+You need to install `impacket` for using mssqlclient.
+
     python3 mssqlclient.py 'sa:MSSQLP@ssw0rd!'@10.10.11.51
 
 ![image](https://github.com/user-attachments/assets/161f9fc9-bf3c-47a6-a725-fb7cd2eeb755)
