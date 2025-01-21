@@ -26,6 +26,12 @@
     |_http-server-header: nginx/1.22.1                                                                                                                                                                                                          
     Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel  
 
+Use the `-p-` flag and perform a full scan of our target.
+
+`nmap -sC -sV -p- 10.10.11.49`  
+
+
+
 havoc.yaotl
 
 ![image](https://github.com/user-attachments/assets/9f0e32e3-4fa7-4a70-8865-b90ea8066ae8)
