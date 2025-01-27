@@ -533,6 +533,12 @@ We can use the following instruction to escalate privileges:
 
 https://www.shielder.com/blog/2024/09/a-journey-from-sudo-iptables-to-local-privilege-escalation/
 
+A low-privileged user on a Linux machine can obtain the root privileges if:
+
+They can execute iptables and iptables-save with sudo as they can inject a fake /etc/passwd entry in the comment of an iptables rule and then abusing iptables-save to overwrite the legitimate /etc/passwd file.
+
+They can execute iptables with sudo and the underlying system misses one of the kernel modules loaded by iptables. In this case they can use the --modprobe argument to run an arbitrary command.
+
 Generate new ssh key.
 
     ssh-keygen -t ed25519
