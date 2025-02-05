@@ -24,6 +24,15 @@ Add domains to `/etc/hosts`
 
     echo "10.10.11.52 blog.bigbang.htb" | sudo tee -a /etc/hosts
 
+blog.bigbang.htb
+
+![image](https://github.com/user-attachments/assets/c5455da5-9f58-4757-a2dd-41d373f7932f)
+
+
+Wappalyzer 
+
+![image](https://github.com/user-attachments/assets/f441cb34-f3ae-465a-8d99-085a87613c17)
+
 ## Exploitation 
 
 
