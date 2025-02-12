@@ -70,7 +70,10 @@ Join page:
     301 -   304B - /uploads  ->  http://cat.htb/uploads/              
     403 -   272B - /uploads/ 
 
+### Stored XSS
+
 ![image](https://github.com/user-attachments/assets/5e48bf68-154f-4cb0-ba5a-0668587c1949)
 
+### SQL Injection
 
 
