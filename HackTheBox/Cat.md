@@ -70,6 +70,10 @@ Join page:
     301 -   304B - /uploads  ->  http://cat.htb/uploads/              
     403 -   272B - /uploads/ 
 
+### GitHack
+
+![image](https://github.com/user-attachments/assets/77d0d115-485b-42b9-a867-094dc8741a13)
+
 ### Stored XSS
 
 ![image](https://github.com/user-attachments/assets/5e48bf68-154f-4cb0-ba5a-0668587c1949)
