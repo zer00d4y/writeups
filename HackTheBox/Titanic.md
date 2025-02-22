@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/70fa2487-af5a-4dfc-8b58-16aa5cbe7ec9)# Titanic Write-up
+# Titanic Write-up
 
 <img src="https://labs.hackthebox.com/storage/avatars/eb5942ec56dd9b6feb06dcf8af8aefc6.png" width="200" height="200">
 
@@ -61,7 +61,7 @@ Read `/etc/hosts`
 
 ![image](https://github.com/user-attachments/assets/1cfb7600-e9eb-4e33-b328-486f4aaf510a)
 
-Add `dev` subdomain to /etc/hosts on our machine!
+Add `dev` subdomain to `/etc/hosts` on our machine!
 
     echo "10.10.11.55 dev.titanic.htb" | sudo tee -a /etc/hosts
 
