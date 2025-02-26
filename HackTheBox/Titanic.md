@@ -30,6 +30,8 @@ Titanic.htb main page:
 
 Book Your trip button
 
+When we confirm a trip, we download the ticket.
+
 ![image](https://github.com/user-attachments/assets/c4724f5d-2e45-43bd-aa4c-952e75998a42)
 
 JSON file
@@ -40,14 +42,19 @@ Request
 
 ![image](https://github.com/user-attachments/assets/c06f2384-b385-4148-a83f-e138ee65b364)
 
-`/etc/passwd`
+Since the ticket read function is not implemented securely, we can replace the ticket file name with the one we want to read. 
+
+Try to read `/etc/passwd`
 
 ![image](https://github.com/user-attachments/assets/734d26d3-21bb-4858-a1fb-457834fd781f)
+
+We can see that there's a developer user.
 
 `/home/developer:/bin/bash`
 
 ![image](https://github.com/user-attachments/assets/003d0b52-b483-4573-a66f-85388ff02034)
 
+Let's try to read user flag by `developer`
 
 Get the user flag!
 
@@ -64,6 +71,8 @@ Or by using Curl
     curl --path-as-is 'http://titanic.htb/download?ticket=/etc/hosts'
 
 ![image](https://github.com/user-attachments/assets/1cfb7600-e9eb-4e33-b328-486f4aaf510a)
+
+We can find subdomains for our host.
 
 Add `dev` subdomain to `/etc/hosts` on our machine!
 
