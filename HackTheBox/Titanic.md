@@ -82,9 +82,13 @@ dev.titanic.htb page
 
 ![image](https://github.com/user-attachments/assets/dcc13324-0065-4100-a93e-bf6aa610ecaf)
 
+http://dev.titanic.htb/explore/repos
+
 ![image](https://github.com/user-attachments/assets/1172ba9c-2c0a-4ddf-b862-59a55bff68a2)
 
 ![image](https://github.com/user-attachments/assets/16f2df5c-2c1d-4d1d-b43a-b7a5f75fcc00)
+
+From the docker-compose.yml file, we get the path to the gitea directory
 
 ![image](https://github.com/user-attachments/assets/ce09544c-a113-4fa2-aeac-8ae117163f06)
 
