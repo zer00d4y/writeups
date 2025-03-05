@@ -5,3 +5,5 @@
 ## Recon 
 
 ### Port enumeration with NMap
+
+`nmap 10.10.11.57`
