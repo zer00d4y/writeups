@@ -42,6 +42,8 @@ Add ip and domain to `/etc/hosts`
 
 ![image](https://github.com/user-attachments/assets/4d473700-502b-4f32-a0fe-a0ea3a14d544)
 
+http://cypher.htb/testing/
 
+![image](https://github.com/user-attachments/assets/0fb1cbde-25b7-46bd-94cb-30e18b930c87)
 
 
