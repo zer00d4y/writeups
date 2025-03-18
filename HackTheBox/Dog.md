@@ -28,3 +28,5 @@
     | /comment/reply /filter/tips /node/add /search /user/register 
     |_/user/password /user/login /user/logout /?q=admin /?q=comment/reply
     Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+![image](https://github.com/user-attachments/assets/28668795-f358-4914-98d4-f4f4a7ddd64f)
