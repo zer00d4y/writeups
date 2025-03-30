@@ -56,6 +56,15 @@ Passwords
 
 ![image](https://github.com/user-attachments/assets/94b628f7-6a92-43b6-b553-4402d6d1c567)
 
+    {
+    “destination”: “/home/martin/”,
+    “multiprocessing”: true,
+    “verbose_log”: false,
+    “directories_to_archive”: [
+    “/home/app-production/user.txt”
+    ]
+    }
+
 ![image](https://github.com/user-attachments/assets/52bc9d84-f57c-4958-a3ab-19840b7022d8)
 
 ![image](https://github.com/user-attachments/assets/e037c2e8-6142-43e2-baba-03624b639a41)
