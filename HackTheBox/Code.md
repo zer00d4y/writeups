@@ -38,6 +38,12 @@ Credentials:
     
     1:c4ca4238a0b923820dcc509a6f75849b
 
+![image](https://github.com/user-attachments/assets/a691af07-fe5f-4653-bb4b-b2be4a868b4b)
+
+![image](https://github.com/user-attachments/assets/8df2dc7a-163f-42a2-aae1-966d255f0329)
+
+![image](https://github.com/user-attachments/assets/52502a54-c3a7-4a84-93ee-697ad8a9d519)
+
 Passwords
 
 `development`:`development`
