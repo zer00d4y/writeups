@@ -20,6 +20,8 @@
     9898/tcp filtered monkeycom
     Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
+## Exploitation 
+
 We can see that port 5000 is running a Python Code Editor.
 
 ![image](https://github.com/user-attachments/assets/64329268-39d2-469b-9b09-134864bc0cc4)
@@ -37,6 +39,8 @@ Credentials:
     martin:3de6f30c4a09c27fc71932bfc68474be
     
     1:c4ca4238a0b923820dcc509a6f75849b
+
+We can use CrackStation
 
 ![image](https://github.com/user-attachments/assets/a691af07-fe5f-4653-bb4b-b2be4a868b4b)
 
