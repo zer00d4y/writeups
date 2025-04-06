@@ -54,7 +54,11 @@ Passwords
 
 `martin`:`nafeelswordsmaster`
 
-## SSH
+### SSH
+
+Martin's account
+
+    ssh martin@code.htb
 
 ![image](https://github.com/user-attachments/assets/771c020d-8b06-43f8-bf6d-1efe1893f457)
 
@@ -81,11 +85,11 @@ Passwords
 
 ![image](https://github.com/user-attachments/assets/d99448ae-4d95-46c1-bdd2-35d05a2221c1)
 
-Get the user flag!
+### Get the user flag!
 
 ![image](https://github.com/user-attachments/assets/929e6daa-a817-4c99-bba9-8d3634d882ca)
 
-Privilege Escalation
+### Privilege Escalation
 
     {
     “destination”: “/home/martin/”,
@@ -98,6 +102,6 @@ Privilege Escalation
 
 ![image](https://github.com/user-attachments/assets/571a91cb-c7f5-4d21-bbd4-4213ed9a6a69)
 
-Get the root flag!
+### Get the root flag!
 
 ![image](https://github.com/user-attachments/assets/60a4d038-0792-4447-8de9-d619e4781f23)
