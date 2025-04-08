@@ -68,7 +68,11 @@ Martin's account
 
 ![image](https://github.com/user-attachments/assets/f7bc8ab2-accc-41ea-8cd2-8d7055ef1ad2)
 
+Run `backy.sh`
+
 ![image](https://github.com/user-attachments/assets/94b628f7-6a92-43b6-b553-4402d6d1c567)
+
+Change file 
 
     {
     “destination”: “/home/martin/”,
