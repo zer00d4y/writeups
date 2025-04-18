@@ -5,3 +5,7 @@
 Difficulty: Easy
 
 room link: https://tryhackme.com/room/brains
+
+## Recon
+
+### Nmap
