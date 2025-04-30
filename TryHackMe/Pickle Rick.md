@@ -1,5 +1,11 @@
 # Pickle Rick Write-up
 
+<img src="https://tryhackme-images.s3.amazonaws.com/room-icons/47d2d3ade1795f81a155d0aca6e4da96.jpeg" width="200" height="200">
+
+Difficulty: Easy
+
+room link: https://tryhackme.com/room/picklerick
+
 ## Recon 
 
 ### Nmap 
