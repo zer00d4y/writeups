@@ -48,4 +48,8 @@ room link: https://tryhackme.com/room/picklerick
 
     Wubbalubbadubdub
 
+## Exploitation
 
+Username: `R1ckRul3s`
+
+Password: `Wubbalubbadubdub`
