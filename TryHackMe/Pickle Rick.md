@@ -53,3 +53,5 @@ room link: https://tryhackme.com/room/picklerick
 Username: `R1ckRul3s`
 
 Password: `Wubbalubbadubdub`
+
+![image](https://github.com/user-attachments/assets/b8b3bbc7-62a0-4fe8-a8bc-1fdb31404433)
