@@ -1,5 +1,7 @@
 # Fluffy Write-up
 
+`nmap -sC -sV 10.10.11.69`
+
     PORT     STATE SERVICE           VERSION
     53/tcp   open  domain            Simple DNS Plus
     88/tcp   open  kerberos-sec      Microsoft Windows Kerberos (server time: 2025-05-28 00:34:31Z)
