@@ -1,5 +1,15 @@
 # Fluffy Write-up
 
+<img src="https://labs.hackthebox.com/storage/avatars/ef8fc92ac7cccd8afa4412241432f064.png" width="200" height="200"> 
+
+MACHINE INFORMATION
+
+As is common in real life Windows pentests, you will start the Fluffy box with credentials for the following account: j.fleischman / J0elTHEM4n1990!
+
+## Recon
+
+### Port enumeration with NMap
+
 `nmap -sC -sV 10.10.11.69`
 
     PORT     STATE SERVICE           VERSION
