@@ -4,7 +4,7 @@
 
 MACHINE INFORMATION
 
-As is common in real life Windows pentests, you will start the Fluffy box with credentials for the following account: j.fleischman / J0elTHEM4n1990!
+As is common in real life Windows pentests, you will start the Fluffy box with credentials for the following account: `j.fleischman` / `J0elTHEM4n1990!`
 
 ## Recon
 
