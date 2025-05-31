@@ -4,7 +4,9 @@
 
 MACHINE INFORMATION
 
-As is common in real life Windows pentests, you will start the Fluffy box with credentials for the following account: `j.fleischman` / `J0elTHEM4n1990!`
+As is common in real life Windows pentests, you will start the Fluffy box with credentials for the following account: 
+
+`j.fleischman` / `J0elTHEM4n1990!`
 
 ## Recon
 
@@ -46,3 +48,39 @@ As is common in real life Windows pentests, you will start the Fluffy box with c
     Host script results:                                                                           
     |_smb2-time: Protocol negotiation failed (SMB2)                          
     |_clock-skew: 7h02m41s
+
+Add to `/etc/hosts`
+
+    echo "10.10.11.69 DC01.fluffy.htb fluffy.htb" | sudo tee -a /etc/hosts
+
+### SMB enumeration
+
+`smbmap -H 10.10.11.69 -u 'j.fleischman' -p 'J0elTHEM4n1990!'` 
+    
+        ________  ___      ___  _______   ___      ___       __         _______
+       /"       )|"  \    /"  ||   _  "\ |"  \    /"  |     /""\       |   __ "\
+      (:   \___/  \   \  //   |(. |_)  :) \   \  //   |    /    \      (. |__) :)
+       \___  \    /\  \/.    ||:     \/   /\   \/.    |   /' /\  \     |:  ____/
+        __/  \   |: \.        |(|  _  \  |: \.        |  //  __'  \    (|  /
+       /" \   :) |.  \    /:  ||: |_)  :)|.  \    /:  | /   /  \   \  /|__/ \
+      (_______/  |___|\__/|___|(_______/ |___|\__/|___|(___/    \___)(_______)
+    -----------------------------------------------------------------------------
+    SMBMap - Samba Share Enumerator v1.10.4 | Shawn Evans - ShawnDEvans@gmail.com<mailto:ShawnDEvans@gmail.com>
+                         https://github.com/ShawnDEvans/smbmap
+    
+    [*] Detected 1 hosts serving SMB                                                                                                  
+    [*] Established 1 SMB connections(s) and 1 authenticated session(s)                                                          
+                                                                                                                                 
+    [+] IP: 10.10.11.69:445 Name: DC01.fluffy.htb           Status: Authenticated
+            Disk                                                    Permissions     Comment
+            ----                                                    -----------     -------
+            ADMIN$                                                  NO ACCESS       Remote Admin
+            C$                                                      NO ACCESS       Default share
+            IPC$                                                    READ ONLY       Remote IPC
+            IT                                                      READ, WRITE
+            NETLOGON                                                READ ONLY       Logon server share 
+            SYSVOL                                                  READ ONLY       Logon server share 
+    [*] Closed 1 connections                                                                          
+
+
+
