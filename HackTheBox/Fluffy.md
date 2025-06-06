@@ -53,6 +53,10 @@ Add to `/etc/hosts`
 
     echo "10.10.11.69 DC01.fluffy.htb fluffy.htb" | sudo tee -a /etc/hosts
 
+### NXC
+
+    nxc smb 10.10.11.69 -u j.fleischman -d fluffy.htb -p 'J0elTHEM4n1990!'
+
 ### SMB enumeration
 
 `smbmap -H 10.10.11.69 -u 'j.fleischman' -p 'J0elTHEM4n1990!'` 
