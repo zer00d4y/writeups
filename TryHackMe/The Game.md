@@ -16,6 +16,6 @@ Search `THM{` like ASCII string (a)
 
 <img width="974" height="675" alt="image" src="https://github.com/user-attachments/assets/51d8eb26-385b-4b42-90f9-c56b2fe8fe62" />
 
-FALG:
+FLAG:
 
     THM{I_CAN_READ_IT_ALL}
