@@ -20,3 +20,17 @@ FLAG:
 FLAG:
 
     crypto{You_will_be_working_with_hex_strings_a_lot}
+
+## Base64
+
+    import base64
+    
+    hex_string = "72bca9b68fc16ac7beeb8f849dca1d8a783e8acf9679bf9269f7bf"
+    byte_data = bytes.fromhex(hex_string)
+    base64_encoded = base64.b64encode(byte_data).decode('ascii')
+    
+    print(base64_encoded)
+
+FLAG:
+
+    crypto/Base+64+Encoding+is+Web+Safe/
