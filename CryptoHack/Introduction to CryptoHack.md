@@ -48,3 +48,18 @@ FLAG:
 FLAG:
 
     crypto{3nc0d1n6_4ll_7h3_w4y_d0wn}
+
+## XOR Starter
+
+    def xor_string_with_key(s, key):
+        return ''.join(chr(ord(c) ^ key) for c in s)
+    
+    input_string = "label"
+    key = 13
+    result = xor_string_with_key(input_string, key)
+    flag = f"crypto{{{result}}}"
+    print(flag)
+
+FLAG:
+
+    crypto{aloha}
