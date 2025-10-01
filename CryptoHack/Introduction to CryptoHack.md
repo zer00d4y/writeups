@@ -2,11 +2,19 @@
 
 ## Finding Flags
 
+Solution:
+
+Just read task description!
+
 FLAG:
 
     crypto{y0ur_f1rst_fl4g}
 
 ## Great Snakes
+
+Solution:
+
+Run attached script and read flag!
 
     #!/usr/bin/env python3
     
