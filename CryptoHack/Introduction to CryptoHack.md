@@ -35,6 +35,8 @@ FLAG:
 
 ## ASCII
 
+Solution:
+
     arr = [99, 114, 121, 112, 116, 111, 123, 65, 83, 67, 73, 73, 95, 112, 114, 49, 110, 116, 52, 98, 108, 51, 125]
     flag = ''.join(chr(i) for i in arr)
     print(flag)
@@ -44,6 +46,8 @@ FLAG:
     crypto{ASCII_pr1nt4bl3}
 
 ## Hex
+
+Solution:
 
     hex_string = "63727970746f7b596f755f77696c6c5f62655f776f726b696e675f776974685f6865785f737472696e67735f615f6c6f747d"
     flag_bytes = bytes.fromhex(hex_string)
@@ -55,6 +59,8 @@ FLAG:
     crypto{You_will_be_working_with_hex_strings_a_lot}
 
 ## Base64
+
+Solution:
 
     import base64
     
@@ -70,6 +76,8 @@ FLAG:
 
 ## Bytes and Big Integers
 
+Solution:
+
     from Crypto.Util.number import long_to_bytes
     
     num = 11515195063862318899931685488813747395775516287289682636499965282714637259206269
@@ -84,6 +92,8 @@ FLAG:
 
 ## XOR Starter
 
+Solution:
+
     def xor_string_with_key(s, key):
         return ''.join(chr(ord(c) ^ key) for c in s)
     
@@ -96,3 +106,9 @@ FLAG:
 FLAG:
 
     crypto{aloha}
+
+## XOR Properties
+
+Solution:
+
+FLAG:
