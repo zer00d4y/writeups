@@ -112,3 +112,9 @@ FLAG:
 Solution:
 
 FLAG:
+
+## Favourite byte
+
+Solution:
+
+FLAG:
