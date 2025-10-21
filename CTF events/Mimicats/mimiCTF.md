@@ -8,6 +8,10 @@ FLAG:
 
 Task-2
 
+Here we find `SSTI` vulnerability by entering the payload `{{7*‘7’}}` instead of the username and see that the response is 49. So it's vulnerable jinja template for `SSTI`
+
+But when we try other payloads, the server may check certain characters, so just try to bypass this by using a different type of possible payloads. 
+
 payload:
 
     {{ config.__class__.__init__.__globals__['os'].popen('cat flag.txt').read() }}
