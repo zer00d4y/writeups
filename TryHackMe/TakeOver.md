@@ -1,5 +1,9 @@
 # TakeOver Write-up
 
+<img src="https://github.com/user-attachments/assets/91f573b5-d548-4d37-a963-d3ba705d1a62" width="120" height="120"> 
+
+---------------------------------------------------------------------------------------------------------------------
+
 Add ip and domain to `/etc/hosts`
 
     echo "10.201.10.152 futurevera.thm" | sudo tee -a /etc/hosts
