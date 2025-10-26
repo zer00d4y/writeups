@@ -10,6 +10,12 @@ Add ip and domain to `/etc/hosts`
 
 ## Sub-domain enumeration via `FFUF`
 
+We can know response size by trying some random subdomain with `curl` !
+
+    curl -I -k -H "Host: subdomain.futurevera.thm" https://10.201.10.152
+
+So, response size for wrong subdomains is `4605` bytes, let's filter by using `-fs` flag and bytes size!  
+
     ffuf -w /usr/share/amass/wordlists/subdomains-top1mil-5000.txt -H "Host: FUZZ.futurevera.thm" -u https://10.201.10.152 -fs 4605
 
 <img width="1149" height="464" alt="image" src="https://github.com/user-attachments/assets/c5f4cd7d-bcd0-4eb6-a8c1-7a44b78f2f2b" />
