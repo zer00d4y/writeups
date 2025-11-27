@@ -40,6 +40,8 @@ Script:
     
     brute_force_md5_joined(target_hashes)
 
+<img width="420" height="297" alt="image" src="https://github.com/user-attachments/assets/39c42e90-35fc-4ef2-94e4-33a5dfd1ff75" />
+
 FLAG:
 
     MCTF25{p1p1ng_h0t_t45k_y3t_n0_p1p15}
