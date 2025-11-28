@@ -2,6 +2,8 @@
 
 ### Task - A Series of Tubes
 
+<img width="600" height="900" alt="image" src="https://github.com/user-attachments/assets/59683c29-4949-4298-a236-9540b70a657f" />
+
 Script:
 
     import hashlib
