@@ -2,7 +2,7 @@
 
 ### Task - A Series of Tubes
 
-<img width="600" height="900" alt="image" src="https://github.com/user-attachments/assets/59683c29-4949-4298-a236-9540b70a657f" />
+<img width="400" height="600" alt="image" src="https://github.com/user-attachments/assets/59683c29-4949-4298-a236-9540b70a657f" />
 
 Script:
 
@@ -48,7 +48,30 @@ FLAG:
 
     MCTF25{p1p1ng_h0t_t45k_y3t_n0_p1p15}
 
+## Cryptography
+
+### Task - Encoding whaat?
+
+Hey! It me Mārtiņš can you help me with the super duper secret message I found? I can't figure it out...
+
+`MTE1IDEwMyAxMjQgMTA2IDYyIDY1IDE3MyAxNjcgNjQgNjEgMTY0IDEzNyAxNjMgNjAgMTM3IDE2NyA2NCA2NSAxMzcgNjcgMTUwIDYxIDE2MyAxMzcgNjMgMTY2IDYzIDE1NiAxMzcgMTQzIDE2MiAxNzEgMTYwIDY3IDYwIDE0NyAxNjIgNjQgMTQ2IDE3MSAxNzUgMTI=`
+
+Base64 decode -> octal to ASCII
+
 <img width="1532" height="715" alt="image" src="https://github.com/user-attachments/assets/bb4a7ed8-fd8a-45f7-a627-9482010518b9" />
 
+FLAG:
+
+    MCTF25{w41t_s0_w45_7h1s_3v3n_cryp70gr4fy}
+
+### Task - Wait this isn't based
+
+`TEJTRTI1ezFfNGxfNTc0cTcxbTZfNzBfNjM3XzdnM19jMUUzcTNtQjM1fQ==`
+
+base64 decode -> ROT13 
 
 <img width="1533" height="563" alt="image" src="https://github.com/user-attachments/assets/a8d5376d-896b-4849-b144-89c6a30a80ca" />
+
+FLAG:
+
+    MCTF25{1_4m_574r71n6_70_637_7h3_d1F3r3nC35}
