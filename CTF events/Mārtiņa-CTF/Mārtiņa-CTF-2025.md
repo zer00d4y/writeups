@@ -75,3 +75,15 @@ base64 decode -> ROT13
 FLAG:
 
     MCTF25{1_4m_574r71n6_70_637_7h3_d1F3r3nC35}
+
+### Task - Connection Established
+
+Connet to host by `telnet` port 1337
+
+Press `2` `2. Get Secrete Message` and receive the flag
+
+<img width="1818" height="551" alt="image" src="https://github.com/user-attachments/assets/682afcfb-2eef-4c15-8e80-a6f136273fb5" />
+
+FLAG:
+
+    MCTF25{wh0_th0ug7h_cryp70_w45_th15_3asy}
