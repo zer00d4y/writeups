@@ -74,3 +74,47 @@ FLAG:
 
     f13{turn_off_your_ai!}
 
+# CRYPTO
+
+## Task - XORSA
+
+Solution:
+
+    from sympy import mod_inverse
+    
+    # Given values 
+    p = 8136275050578589354941365310845236830015617119134982422908833505524990840673975050206131066804435036075471735588017311510775351938363545669020267192173791
+    q = 8136275050578589354941365310845236830015617119134982422908833505524990840673975050206131066804435036075471735588017311510775351938363545669020267192176083
+    n = p * q
+    c = 7909628388722349922026000796369904154754870043467924538646750692558839699959188311950225249912181943340447814258642765415584559383400716077797261462253392051177633213671341162600084678524736244177858359444505705375151780091622007189624527808666142433823575255166638317581931865191245934324356962633320716177
+    e = 65537
+    FLAG_LEN = 36
+    
+    # Decrypt RSA
+    phi = (p - 1) * (q - 1)
+    d = mod_inverse(e, phi)
+    m = pow(c, d, n)
+    byte_len = (m.bit_length() + 7) // 8
+    m_bytes_full = m.to_bytes(byte_len, 'big')
+    m_bytes = m_bytes_full[-FLAG_LEN:]  # Last 36 bytes
+    
+    # Brute-force keystream (RELAXED validation)
+    print("m_bytes:", m_bytes.hex())
+    for k0 in range(32, 256):
+        ks = bytearray(32)
+        ks[0] = k0
+        for i in range(1, 32):
+            ks[i] = (ks[i-1] * 9) % 256
+        
+        flag = bytes(m_bytes[i] ^ ks[i % 32] for i in range(FLAG_LEN))
+        
+        if (flag.startswith(b'f') and 
+            b'}' in flag and 
+            flag.count(b'_') >= 2):  # Look for underscores
+            print(f"FLAG: f13{{{flag[3:].decode('ascii', errors='ignore')}}}")
+            print(f"ks[0] = {k0}")
+            break
+
+FLAG:
+
+    f13{nd_XORed_byte5_and_fl4g_tabyldy!}
