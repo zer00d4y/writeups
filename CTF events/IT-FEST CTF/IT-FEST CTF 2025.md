@@ -118,3 +118,15 @@ Solution:
 FLAG:
 
     f13{f0und_XORed_byte5_and_fl4g_tabyldy!}
+
+## Sanity check
+
+<img width="800" height="600" alt="image" src="https://github.com/user-attachments/assets/ebef879c-2468-4fad-b568-424499e8d6a0" />
+
+`F` contains a hyperlink to Google Drive, which contains a flag.
+
+![sanity_check](https://github.com/user-attachments/assets/80e004a1-fd58-459f-9c6a-7dae14eb0011)
+
+FLAG:
+
+    f13{heey_g00d_j0b_glhf}
