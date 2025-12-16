@@ -1,1 +1,0 @@
-# TheFrizz Write-up
