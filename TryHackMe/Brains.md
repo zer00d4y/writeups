@@ -9,3 +9,5 @@ room link: https://tryhackme.com/room/brains
 ## Recon
 
 ### Nmap
+
+`nmap -sV -sC brains.thm`
