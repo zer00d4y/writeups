@@ -1,1 +1,0 @@
-# Cybercoliseum IV Write-up
