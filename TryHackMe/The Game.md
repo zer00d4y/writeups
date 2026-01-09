@@ -8,6 +8,10 @@ Get the task file!
 
 <img width="1229" height="376" alt="image" src="https://github.com/user-attachments/assets/0168bc17-76d4-45a5-a6d4-f5858628a5b2" />
 
+Download task file and unpack it!
+
+    unzip archive.zip
+
 ### 010 Editor
 
 Open `Tetrix.exe` in 010 Editor.
