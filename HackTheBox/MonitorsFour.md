@@ -4,4 +4,6 @@
 
 ## Recon
 
-### Nmap
+### Port enumeration with Nmap
+
+`nmap -sC -sV 10.129.2.14`
