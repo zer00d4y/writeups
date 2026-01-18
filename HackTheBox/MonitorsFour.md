@@ -24,6 +24,19 @@ monitorsfour.htb
 
 <img width="1446" height="730" alt="image" src="https://github.com/user-attachments/assets/1074c829-cde7-46cb-83e1-10b01e367e4b" />
 
+### Directory enumeration with Dirsearch
+
+`dirsearch -e php,html,js -u http://monitorsfour.htb 404,403,401,307`
+
+    200 -   97B  - /.env  
+    200 -  367B  - /contact 
+    200 -    4KB - /login
+    200   367B   http://monitorsfour.htb/contact
+    200     4KB  http://monitorsfour.htb/login
+    301   162B   http://monitorsfour.htb/static    -> REDIRECTS TO: http://monitorsfour.htb/static/
+    200    35B   http://monitorsfour.htb/user
+    301   162B   http://monitorsfour.htb/views    -> REDIRECTS TO: http://monitorsfour.htb/views/
+
 Read `.env` file 
 
     DB_HOST=mariadb
