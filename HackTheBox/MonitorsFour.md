@@ -37,6 +37,10 @@ monitorsfour.htb
     200    35B   http://monitorsfour.htb/user
     301   162B   http://monitorsfour.htb/views    -> REDIRECTS TO: http://monitorsfour.htb/views/
 
+So now we know about open `.env` file, let's visit page and get it! 
+
+http://monitorsfour.htb/.env
+
 Read `.env` file 
 
     DB_HOST=mariadb
