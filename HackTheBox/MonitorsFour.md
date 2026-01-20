@@ -49,4 +49,14 @@ Read `.env` file
     DB_USER=monitorsdbuser
     DB_PASS=f37p2j8f4t0r
 
+### FFUF
 
+`ffuf -c -u http://monitorsfour.htb/ -H "Host: FUZZ.monitorsfour.htb" -w /usr/share/wordlists/amass/subdomains-top1mil-20000.txt` 
+
+## CVE-2024-42179
+
+`5985/tcp open  http    Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)`
+
+HCL MyXalytics is affected by sensitive information disclosure vulnerability. 
+
+The HTTP response header exposes the Microsoft-HTTP API∕2.0 as the server's name & version.
