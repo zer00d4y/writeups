@@ -4,7 +4,7 @@
 
 ## Recon
 
-### Port enumeration with Nmap
+### Port enumeration with `Nmap`
 
 `nmap -sC -sV 10.129.2.14`
 
@@ -24,7 +24,7 @@ monitorsfour.htb
 
 <img width="1446" height="730" alt="image" src="https://github.com/user-attachments/assets/1074c829-cde7-46cb-83e1-10b01e367e4b" />
 
-### Directory enumeration with Dirsearch
+### Directory enumeration with `Dirsearch`
 
 `dirsearch -e php,html,js -u http://monitorsfour.htb 404,403,401,307`
 
@@ -49,9 +49,15 @@ Read `.env` file
     DB_USER=monitorsdbuser
     DB_PASS=f37p2j8f4t0r
 
-### FFUF
+### Sub-domain enumeration with `FFUF`
 
 `ffuf -c -u http://monitorsfour.htb/ -H "Host: FUZZ.monitorsfour.htb" -w /usr/share/wordlists/amass/subdomains-top1mil-20000.txt` 
+
+    cacti                   [Status: 302, Size: 0, Words: 1, Lines: 1, Duration: 820ms]
+
+Add sub-domain `cacti.monitorsfour.htb` to `/etc/hosts` 
+
+
 
 ## CVE-2024-42179
 
