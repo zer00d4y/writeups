@@ -66,3 +66,11 @@ Add sub-domain `cacti.monitorsfour.htb` to `/etc/hosts`
 HCL MyXalytics is affected by sensitive information disclosure vulnerability. 
 
 The HTTP response header exposes the Microsoft-HTTP API∕2.0 as the server's name & version.
+
+## CVE-2024–43363
+
+Cacti is an open source performance and fault management framework. 
+
+An admin user can create a device with a malicious hostname containing php code and repeat the installation process to use a php file as the cacti log file. 
+
+After having the malicious hostname end up in the logs (log poisoning), one can simply go to the log file url to execute commands to achieve RCE. This issue has been addressed in version 1.2.28 and all users are advised to upgrade. There are no known workarounds for this vulnerability.
