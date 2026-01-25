@@ -57,7 +57,7 @@ Read `.env` file
 
 Add sub-domain `cacti.monitorsfour.htb` to `/etc/hosts` 
 
-
+<img width="562" height="431" alt="image" src="https://github.com/user-attachments/assets/9a57f305-90e3-439c-806a-44dce048a0f1" />
 
 ## CVE-2024-42179
 
@@ -68,6 +68,7 @@ HCL MyXalytics is affected by sensitive information disclosure vulnerability.
 The HTTP response header exposes the Microsoft-HTTP API∕2.0 as the server's name & version.
 
 ## CVE-2024–43363
+`Version 1.2.28 | (c) 2004-2026 - The Cacti Group`
 
 Cacti is an open source performance and fault management framework. 
 
