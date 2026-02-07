@@ -4,6 +4,10 @@
 
 ## Recon
 
+Add host to `/etc/hosts`
+
+    echo "10.129.21.67 facts.htb" | sudo tee -a /etc/hosts  
+
 ### Port enumeration with Nmap
 
 `nmap -sC -sV facts.htb`
@@ -17,3 +21,4 @@
     |_http-title: Did not follow redirect to http://facts.htb/
     |_http-server-header: nginx/1.26.3 (Ubuntu)
     Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
