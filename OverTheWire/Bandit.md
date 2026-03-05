@@ -91,3 +91,82 @@ not executable.
 
     ssh bandit5@bandit.labs.overthewire.org -p 2220
 
+<img width="567" height="482" alt="image" src="https://github.com/user-attachments/assets/65690de1-4b69-49bb-bcc1-3b0ef1db1dd4" />
+
+Password for next level:
+
+    HWasnPhtq9AVKe0dmk45nxy20cvUa6EG
+
+## Level 6 → Level 7
+
+The password for the next level is stored somewhere on the server and has all of the following properties:
+
+owned by user bandit7,
+owned by group bandit6,
+33 bytes in size.
+
+`bandit6`:`HWasnPhtq9AVKe0dmk45nxy20cvUa6EG`
+
+    ssh bandit6@bandit.labs.overthewire.org -p 2220
+
+<img width="634" height="98" alt="image" src="https://github.com/user-attachments/assets/c1e053e1-69e5-4eaa-bf3d-c667709ef59c" />
+
+Password for next level:
+
+    morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj
+
+## Level 7 → Level 8
+
+The password for the next level is stored in the file data.txt next to the word millionth
+
+`bandit7`:`morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj`
+
+    ssh bandit7@bandit.labs.overthewire.org -p 2220
+
+<img width="430" height="69" alt="image" src="https://github.com/user-attachments/assets/cd5930ea-3ead-4b0e-9318-104bfdc133cf" />
+
+Password for next level:
+
+    dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc
+
+## Level 8 → Level 9
+
+The password for the next level is stored in the file data.txt and is the only line of text that occurs only once
+
+`bandit8`:`dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc`
+
+    ssh bandit8@bandit.labs.overthewire.org -p 2220
+
+<img width="414" height="62" alt="image" src="https://github.com/user-attachments/assets/3961b70e-ad36-477d-82dd-ab3ed01acf74" />
+
+Password for next level:
+
+    4CKMh1JI91bUIZZPXDqGanal4xvAg0JM
+
+## Level 9 → Level 10
+
+The password for the next level is stored in the file data.txt in one of the few human-readable strings, preceded by several ‘=’ characters.
+
+`bandit9`:`4CKMh1JI91bUIZZPXDqGanal4xvAg0JM`
+
+    ssh bandit9@bandit.labs.overthewire.org -p 2220
+
+<img width="478" height="111" alt="image" src="https://github.com/user-attachments/assets/11d8a035-c7c1-4432-bce2-be42af0bb645" />
+
+Password for next level:
+
+    FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey
+
+## Level 10 → Level 11
+
+The password for the next level is stored in the file data.txt, which contains base64 encoded data
+
+`bandit10`:`FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey`
+
+    ssh bandit10@bandit.labs.overthewire.org -p 2220
+
+<img width="598" height="103" alt="image" src="https://github.com/user-attachments/assets/748b8c06-09cc-4260-9795-aa3b338b8d29" />
+
+Password for next level:
+
+    dtR173fZKb0RRsDFSGsg2RWnpNVj3qRr
