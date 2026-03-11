@@ -32,3 +32,22 @@ Use `CTRL + U` to view source page!
 The password for natas2 is:
 
     TguMNxKo1DSa1tujBLuZJnDUlCcUAPlI 
+
+## Level 1 → Level 2
+
+    Username: natas2
+    URL:      http://natas2.natas.labs.overthewire.org
+
+<img width="1125" height="355" alt="image" src="https://github.com/user-attachments/assets/fb53fbb2-72ca-42a4-81b1-3e67659ac1cf" />
+
+We can see `/files/` directories 
+
+<img width="1116" height="409" alt="image" src="https://github.com/user-attachments/assets/53fa8479-53b4-4f28-b8c9-0683b8d6c112" />
+
+http://natas2.natas.labs.overthewire.org/files/users.txt
+
+<img width="701" height="216" alt="image" src="https://github.com/user-attachments/assets/85047c88-8df1-4092-944d-a036cb2f850b" />
+
+natas3:
+
+    3gqisGdR0pjm6tpkDKdIWO2hSvchLeYH
