@@ -51,3 +51,9 @@ http://natas2.natas.labs.overthewire.org/files/users.txt
 natas3:
 
     3gqisGdR0pjm6tpkDKdIWO2hSvchLeYH
+
+## Level 2 → Level 3
+
+    Username: natas3
+    URL:      http://natas3.natas.labs.overthewire.org
+
