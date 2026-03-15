@@ -64,6 +64,7 @@ natas3:
 `/s3cr3t/` page
 
 
+
 `/s3cr3t/user.txt` file
 
 <img width="698" height="145" alt="image" src="https://github.com/user-attachments/assets/057d5b4f-2723-4b39-8f06-fc935947ad97" />
@@ -71,3 +72,9 @@ natas3:
 natas4:
 
     QryZXc2e0zahULdHrtHxzyYkj59kUxLQ
+
+## Level 3 → Level 4
+
+    Username: natas4
+    URL:      http://natas4.natas.labs.overthewire.org
+
