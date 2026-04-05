@@ -185,3 +185,4 @@ Kerbrute
 
 `kerbrute userenum userlist.txt --dc spookysec.local -d spookysec.local` 
 
+## Abusing Kerberos
