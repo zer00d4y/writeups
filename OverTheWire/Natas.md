@@ -16,7 +16,7 @@ The password for natas1 is:
 
     0nzCigAq7t2iALyvU9xcHlYN4MlkIwlq
 
-## Level 0 → Level 1
+## Level 1
 
     Username: natas1
     URL:      http://natas1.natas.labs.overthewire.org
@@ -33,7 +33,7 @@ The password for natas2 is:
 
     TguMNxKo1DSa1tujBLuZJnDUlCcUAPlI 
 
-## Level 1 → Level 2
+## Level 2
 
     Username: natas2
     URL:      http://natas2.natas.labs.overthewire.org
@@ -52,7 +52,7 @@ natas3:
 
     3gqisGdR0pjm6tpkDKdIWO2hSvchLeYH
 
-## Level 2 → Level 3
+## Level 3
 
     Username: natas3
     URL:      http://natas3.natas.labs.overthewire.org
@@ -73,7 +73,7 @@ natas4:
 
     QryZXc2e0zahULdHrtHxzyYkj59kUxLQ
 
-## Level 3 → Level 4
+## Level 4
 
     Username: natas4
     URL:      http://natas4.natas.labs.overthewire.org
@@ -101,7 +101,7 @@ natas5:
 
     0n35PkggAPm2zbEpOU802c0x0Msn1ToK
 
-## Level 4 → Level 5
+## Level 5
 
     Username: natas5
     URL:      http://natas5.natas.labs.overthewire.org
