@@ -105,3 +105,8 @@ natas5:
 
     Username: natas5
     URL:      http://natas5.natas.labs.overthewire.org
+
+## Level 6 
+
+    Username: natas6
+    URL:      http://natas6.natas.labs.overthewire.org
