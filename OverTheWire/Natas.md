@@ -110,3 +110,24 @@ natas5:
 
     Username: natas6
     URL:      http://natas6.natas.labs.overthewire.org
+
+## Level 7
+
+    Username: natas7
+    URL:      http://natas7.natas.labs.overthewire.org
+
+## Level 8
+
+    Username: natas8
+    URL:      http://natas8.natas.labs.overthewire.org
+
+## Level 9
+
+    Username: natas9
+    URL:      http://natas9.natas.labs.overthewire.org
+
+## Level 10
+
+    Username: natas10
+    URL:      http://natas10.natas.labs.overthewire.org
+
