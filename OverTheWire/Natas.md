@@ -106,10 +106,30 @@ natas5:
     Username: natas5
     URL:      http://natas5.natas.labs.overthewire.org
 
+<img width="1127" height="361" alt="image" src="https://github.com/user-attachments/assets/8d9afa08-1190-482e-b744-6e7b89551cf3" />
+
+`curl http://natas5.natas.labs.overthewire.org/ -u natas5 -c natas5_cookie.txt`
+
+<img width="954" height="517" alt="image" src="https://github.com/user-attachments/assets/468122c8-a880-4903-ac10-571ed364f0fc" />
+
+Change `loggedin 0` to `loggedin 1`
+
+<img width="960" height="133" alt="image" src="https://github.com/user-attachments/assets/01b89689-7e7a-4b1a-a759-750c49f5bf7c" />
+
+`curl http://natas5.natas.labs.overthewire.org/ -u natas5 -b natas5_cookie.txt"`
+
+<img width="954" height="338" alt="image" src="https://github.com/user-attachments/assets/b7ed99df-47c5-417e-bc91-957f20c379d2" />
+
+natas6:
+
+    0RoJwHdSKWFTYR5WuiAewauSuNaBXned
+
 ## Level 6 
 
     Username: natas6
     URL:      http://natas6.natas.labs.overthewire.org
+
+
 
 ## Level 7
 
