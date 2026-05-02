@@ -221,4 +221,14 @@ natas10:
     Username: natas10
     URL:      http://natas10.natas.labs.overthewire.org
 
+<img width="761" height="317" alt="image" src="https://github.com/user-attachments/assets/ee05953f-2083-4db2-b082-42e25ef8f5d9" />
 
+<img width="526" height="351" alt="image" src="https://github.com/user-attachments/assets/3efec60d-bd40-4f40-9453-c6439b21f86f" />
+
+`a /etc/natas_webpass/natas11` 
+
+<img width="763" height="404" alt="image" src="https://github.com/user-attachments/assets/5941b184-40ec-42e7-ada8-a3d97fd0b26f" />
+
+natas11:
+
+    UJdqkK1pTu6VLt9UHWAgRZz6sVUZ3lEk
