@@ -1,5 +1,7 @@
 # Wgel CTF Write-up
 
+<img src="https://tryhackme-images.s3.amazonaws.com/room-icons/8116d1d52d3a63dd1e7c2e7ddce8a0d5.png" width="200" height="200">
+
 ## Recon
 
 ### Nmap 
