@@ -1,5 +1,7 @@
 # Team Write-up
 
+<img width="150" height="150" alt="image" src="https://github.com/user-attachments/assets/4d14dff7-ae61-471a-a667-29f512bb285f" />
+
 ## Recon
 
 ### Nmap
