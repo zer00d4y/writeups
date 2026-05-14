@@ -1,8 +1,8 @@
 # Brute It Write-up
 
-Reconnaissance
+## Reconnaissance
 
-NMap
+### NMap
 
 `nmap -sV -sC 10.48.168.98`
 
@@ -18,7 +18,7 @@ NMap
     MAC Address: 02:6C:B6:74:D4:CB (Unknown)
     Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
-Dirsearch
+### Dirsearch
 
 `dirsearch -u http://10.48.168.98`
 
@@ -61,6 +61,21 @@ What is the hidden directory?
     /admin
 --------------------------------------------
 
-Getting a shell
+## Getting a shell
+
+### Hydra
 
 
+
+--------------------------------------------
+
+What is the user:password of the admin panel?
+
+Crack the RSA key you found.
+What is John's RSA Private Key passphrase?
+
+user.txt
+
+Web flag
+
+--------------------------------------------
