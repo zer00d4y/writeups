@@ -79,3 +79,16 @@ user.txt
 Web flag
 
 --------------------------------------------
+
+## Privilege Escalation 
+
+
+
+--------------------------------------------
+
+Find a form to escalate your privileges.
+What is the root's password?
+
+root.txt
+
+--------------------------------------------
