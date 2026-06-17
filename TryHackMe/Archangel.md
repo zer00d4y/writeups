@@ -7,3 +7,11 @@
 ### Nmap 
 
 `nmap -sC -sV`
+
+## Exploitation
+
+/robots.txt
+
+/test.php
+
+## Privilege Escalation
