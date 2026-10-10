@@ -6,3 +6,6 @@
 
 `1a0d0c302d3b2b1a292a3a38282c2f222d2a112d282c31202d2d2e24352e60`
 
+FLAG:
+
+    THM{the_hackfinity_highschool}
