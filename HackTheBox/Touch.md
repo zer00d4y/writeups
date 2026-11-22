@@ -1,5 +1,7 @@
 # Touch Write-up
 
+<img src="https://cdn.services-k8s.prod.aws.htb.systems/content/machines/avatar/a2cc2bba-5e0b-41f2-842e-2f3d3cee8d22-1789977906.png" width="100" height="100">
+
 Machine Information
 
 In the Layover machine, you uncovered a name and a booking confirmation code. Maybe they'll come in handy here? Jenny Crawford / KS7X2M
